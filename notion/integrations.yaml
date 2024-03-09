@@ -16,7 +16,8 @@ auth_schemes:
       base_url: "{{baseURL}}"
 
     authorization_params:
-      response_type: code
+        response_type: code
+        owner: user
 
     fields:
       - name: base_url
