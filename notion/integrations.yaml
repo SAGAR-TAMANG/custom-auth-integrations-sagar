@@ -13,7 +13,7 @@ auth_schemes:
     default_scopes: []
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     proxy:
-      base_url: "{{baseURL}}"
+      base_url: "{{base_url}}"
 
     authorization_params:
         response_type: code
