@@ -31,7 +31,7 @@ auth_schemes:
     proxy:
       base_url: "{{base_url}}"
       headers:
-        Authorization: "Bearer {{apiKey}}}"
+        Authorization: "Bearer {{api_key}}}"
 
     fields:
       - name: api_key
