@@ -1,0 +1,29 @@
+name: Github
+description: A collaborative platform for software development and project management.
+logo: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
+categories: [dev-tools, support, ticketing]
+
+auth_schemes:
+  - scheme_name: github_oauth
+    auth_mode: OAUTH2
+    # client_id, client_secret will be provided upon request.
+    # Default parameters and fields are determined based on auth_mode
+    authorization_url: "https://github.com/login/oauth/authorize"
+    token_url: "https://github.com/login/oauth/access_token"
+    default_scopes: []
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    token_request_auth_method: basic
+    proxy:
+      base_url: "{{base_url}}"
+
+    authorization_params:
+        response_type: code
+        owner: user
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for github API requests. For more information, visit https://docs.github.com/en/rest?apiVersion=2022-11-28"
+        type: string
+        default: https://api.github.com
+
