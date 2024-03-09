@@ -8,8 +8,8 @@ auth_schemes:
     auth_mode: OAUTH2
     # client_id, client_secret will be provided upon request.
     # Default parameters and fields are determined based on auth_mode
-    authorization_url: "https://notion.app/oauth/authorize"
-    token_url: "https://api.notion.app/oauth/token"
+    authorization_url: "https://api.notion.com/v1/oauth/authorize"
+    token_url: "https://api.notion.com/v1/oauth/token"
     default_scopes: ["read", "write", "issues:create", "comments:create"]
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     proxy:
