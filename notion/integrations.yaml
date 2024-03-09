@@ -39,7 +39,7 @@ auth_schemes:
         displayName: API Key
         description: "Your notion API key for authentication. Obtain it from your notion settings."
         type: string
-        required: true
+        required: false
       - name: base_url
         expected_from_customer: true 
         displayName: Base URL
