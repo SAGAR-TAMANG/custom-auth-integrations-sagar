@@ -1,0 +1,28 @@
+name: Discord
+description: An instant messaging and VoIP social platform.
+logo: https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df29d55a92d945_full_logo_blurple_RGB.svg
+categories: [gaming, social]
+
+auth_schemes:
+  - scheme_name: discord_oauth
+    auth_mode: OAUTH2
+    # client_id, client_secret will be provided upon request.
+    # Default parameters and fields are determined based on auth_mode
+    authorization_url: "https://discord.com/api/oauth2/authorize"
+    token_url: "https://discord.com/api/oauth2/token"
+    default_scopes: []
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    token_request_auth_method: basic
+    proxy:
+      base_url: "{{base_url}}"
+
+    authorization_params:
+        response_type: code
+        owner: user
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for discord API requests. For more information, visit https://discord.com/developers/docs/intro"
+        type: string
+        default: https://discord.com
