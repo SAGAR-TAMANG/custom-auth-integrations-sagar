@@ -12,15 +12,19 @@ auth_schemes:
     # Default parameters and fields are determined based on auth_mode
     authorization_url: "https://auth.atlassian.com/authorize"
     token_url: "https://auth.atlassian.com/oauth/token"
-    default_scopes: []
+    default_scopes: ["read:jira-user read:jira-work write:jira-work"]
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
-    token_request_auth_method: basic
+    # token_request_auth_method: basic
     proxy:
       base_url: "{{base_url}}"
 
+    token_params:
+        grant_type: authorization_code
+
     authorization_params:
+        audience: api.atlassian.com
+        prompt: consent
         response_type: code
-        owner: user
 
     fields:
       - name: base_url
