@@ -12,7 +12,7 @@ auth_schemes:
     # Default parameters and fields are determined based on auth_mode
     authorization_url: "https://app.hubspot.com/oauth/authorize"
     token_url: "https://api.hubapi.com/oauth/v1/token"
-    default_scopes: []
+    default_scopes: ["contacts automation"]
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     token_request_auth_method: basic
     proxy:
