@@ -13,6 +13,7 @@ auth_schemes:
     authorization_url: "https://auth.calendly.com/oauth/authorize"
     token_url: "https://auth.calendly.com/oauth/token"
     default_scopes: []
+    token_request_auth_method: basic
     authorization_params:
         response_type: code
     proxy:
