@@ -19,6 +19,8 @@ auth_schemes:
 
     authorization_params:
         response_type: code
+    token_params:
+        response_type: code
 
     fields:
       - name: base_url
