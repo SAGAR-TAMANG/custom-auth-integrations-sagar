@@ -1,0 +1,28 @@
+name: Google Docs
+unique_key: google_docs
+description: Google Docs is a web-based collaborative software office suite by Google.
+logo: https://en.wikipedia.org/wiki/File:Google_Docs_2020_Logo.svg
+categories: [productivity, documents]
+
+auth_schemes:
+  - scheme_name: google_docs_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://accounts.google.com/o/oauth2/v2/auth"
+    token_url: "https://oauth2.googleapis.com/token"
+    default_scopes: ["https://www.googleapis.com/auth/documents"]
+    authorization_params:
+        response_type: code
+        access_type: offline
+        prompt: consent
+    proxy:
+      base_url: "{{base_url}}"
+
+    token_params:
+        grant_type: authorization_code
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Google Docs API requests. For more information, visit https://developers.google.com/docs"
+        type: string
+        default: https://docs.googleapis.com/v1

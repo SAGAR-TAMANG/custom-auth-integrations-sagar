@@ -1,0 +1,28 @@
+name: Google Sheets
+unique_key: google_sheets
+description: Google Sheets is a web-based spreadsheet program that is part of the Google Drive office suite.
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Google_Sheets_2020_Logo.svg/872px-Google_Sheets_2020_Logo.svg.png
+categories: [productivity, spreadsheets]
+
+auth_schemes:
+  - scheme_name: google_sheets_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://accounts.google.com/o/oauth2/v2/auth"
+    token_url: "https://oauth2.googleapis.com/token"
+    default_scopes: ["https://www.googleapis.com/auth/spreadsheets"]
+    authorization_params:
+        response_type: code
+        access_type: offline
+        prompt: consent
+    proxy:
+      base_url: "{{base_url}}"
+
+    token_params:
+        grant_type: authorization_code
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Google Sheets API requests. For more information, visit https://developers.google.com/sheets"
+        type: string
+        default: https://sheets.googleapis.com/v4

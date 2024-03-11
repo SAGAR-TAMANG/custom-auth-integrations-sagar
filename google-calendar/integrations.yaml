@@ -1,0 +1,28 @@
+name: Google Calendar
+unique_key: google_calendar
+description: Google Calendar is a time-management and scheduling calendar service developed by Google.
+logo: https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg
+categories: [productivity, calendar]
+
+auth_schemes:
+  - scheme_name: google_calendar_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://accounts.google.com/o/oauth2/v2/auth"
+    token_url: "https://oauth2.googleapis.com/token"
+    default_scopes: ["https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/calendar.events"]
+    authorization_params:
+        response_type: code
+        access_type: offline
+        prompt: consent
+    proxy:
+      base_url: "{{base_url}}"
+
+    token_params:
+        grant_type: authorization_code
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Google Calendar API requests. For more information, visit https://developers.google.com/calendar"
+        type: string
+        default: https://www.googleapis.com/calendar/v3

@@ -1,0 +1,28 @@
+name: Gmail
+unique_key: gmail
+description: Gmail is a free email service developed by Google.
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1024px-Gmail_icon_%282020%29.svg.png
+categories: [productivity, email]
+
+auth_schemes:
+  - scheme_name: gmail_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://accounts.google.com/o/oauth2/v2/auth"
+    token_url: "https://oauth2.googleapis.com/token"
+    default_scopes: ["https://mail.google.com/"]
+    authorization_params:
+        response_type: code
+        access_type: offline
+        prompt: consent
+    proxy:
+      base_url: "{{base_url}}"
+
+    token_params:
+        grant_type: authorization_code
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Gmail API requests. For more information, visit https://developers.google.com/gmail"
+        type: string
+        default: https://www.googleapis.com/gmail/v1
