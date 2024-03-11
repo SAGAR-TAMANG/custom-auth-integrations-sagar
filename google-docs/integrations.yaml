@@ -1,5 +1,5 @@
-name: "Google_Docs"
-unique_key: "google_docs"
+name: "Google Docs"
+unique_key: "google-docs"
 description: Google Docs is a web-based collaborative software office suite by Google.
 logo: https://en.wikipedia.org/wiki/File:Google_Docs_2020_Logo.svg
 categories: [productivity, documents]
