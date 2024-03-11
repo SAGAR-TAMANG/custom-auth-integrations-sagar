@@ -21,6 +21,7 @@ auth_schemes:
     authorization_params:
         audience: api.atlassian.com
         prompt: consent
+        response_type: code
 
     fields:
       - name: base_url
