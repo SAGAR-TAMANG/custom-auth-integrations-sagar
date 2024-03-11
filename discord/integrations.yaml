@@ -12,7 +12,7 @@ auth_schemes:
     # Default parameters and fields are determined based on auth_mode
     authorization_url: "https://discord.com/api/oauth2/authorize"
     token_url: "https://discord.com/api/oauth2/token"
-    default_scopes: ["identify", "email"]
+    default_scopes: ["identify email"]
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     proxy:
       base_url: "{{base_url}}"
