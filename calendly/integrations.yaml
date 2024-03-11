@@ -17,11 +17,6 @@ auth_schemes:
         response_type: code
     proxy:
       base_url: "{{base_url}}"
-
-    authorization_params:
-        response_type: code
-        owner: user
-
     fields:
       - name: base_url
         displayName: Base URL
