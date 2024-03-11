@@ -9,7 +9,7 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: "https://accounts.google.com/o/oauth2/v2/auth"
     token_url: "https://oauth2.googleapis.com/token"
-    default_scopes: ["https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile"]
+    default_scopes: ["https://www.googleapis.com/auth/userinfo.email" "https://www.googleapis.com/auth/userinfo.profile"]
     authorization_params:
         response_type: code
         access_type: offline
