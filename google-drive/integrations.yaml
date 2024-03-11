@@ -1,4 +1,4 @@
-name: Google-Drive
+name: "Google Drive"
 unique_key: "google-drive"
 description: Google Drive is a file storage and synchronization service developed by Google.
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/200px-Google_Drive_icon_%282020%29.svg.png
