@@ -17,6 +17,7 @@ auth_schemes:
     proxy:
       base_url: "{{base_url}}"
 
+    token_request_auth_method: basic
     authorization_params:
         response_type: code
     token_params:
