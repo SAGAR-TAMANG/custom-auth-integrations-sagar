@@ -1,0 +1,31 @@
+extends: base/zendesk/integrations.yaml
+unique_key: zendesk
+name: Zendesk
+description: Provides Saas products related to customer support, sales, and other customer communications.
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Zendesk_logo.svg/2560px-Zendesk_logo.svg.png
+categories: [support, ticketing]
+
+auth_schemes:
+  - scheme_name: zendesk_oauth
+    auth_mode: OAUTH2
+    # client_id, client_secret will be provided upon request.
+    # Default parameters and fields are determined based on auth_mode
+    authorization_url: "https://${connectionConfig.subdomain}.zendesk.com/oauth/authorizations/new"
+    token_url: "https://${connectionConfig.subdomain}.zendesk.com/oauth/tokens"
+    default_scopes: []
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    token_request_auth_method: basic
+    proxy:
+      base_url: "{{base_url}}"
+
+    authorization_params:
+        response_type: code
+        owner: user
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for zendesk API requests. For more information, visit https://developer.zendesk.com/api-reference/"
+        type: string
+        default: https://${connectionConfig.subdomain}.zendesk.com
+

@@ -1,3 +1,5 @@
+extends: base/notion/integrations.yaml
+unique_key: notion
 name: Notion
 description: A modern project management tool designed for efficiency and performance.
 logo: https://i.imgur.com/98qPYXd.png
@@ -19,6 +21,9 @@ auth_schemes:
     authorization_params:
         response_type: code
         owner: user
+    
+    token_params:
+        grant_type: authorization_code
 
     fields:
       - name: base_url

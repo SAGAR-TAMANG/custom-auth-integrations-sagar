@@ -1,0 +1,26 @@
+extends: base/calendly/integrations.yaml
+unique_key: calendly
+name: Calendly
+description: A business communication platform used for teams to schedule, prepare and follow up on external meetings.
+logo: https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Calendly_company_logo.png/330px-Calendly_company_logo.png
+categories: [productivity]
+
+auth_schemes:
+  - scheme_name: calendly_oauth
+    auth_mode: OAUTH2
+    # client_id, client_secret will be provided upon request.
+    # Default parameters and fields are determined based on auth_mode
+    authorization_url: "https://auth.calendly.com/oauth/authorize"
+    token_url: "https://auth.calendly.com/oauth/token"
+    default_scopes: []
+    token_request_auth_method: basic
+    authorization_params:
+        response_type: code
+    proxy:
+      base_url: "{{base_url}}"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for calendly API requests. For more information, visit https://developer.calendly.com/api-docs"
+        type: string
+        default: https://api.calendly.com

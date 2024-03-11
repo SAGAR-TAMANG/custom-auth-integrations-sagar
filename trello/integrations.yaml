@@ -1,0 +1,30 @@
+extends: base/trello/integrations.yaml
+unique_key: trello
+name: Trello
+description: A web-based, kanban-style, list-making application.
+logo: https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Trello_logo.svg/189px-Trello_logo.svg.png?20210216184934
+categories: [productivity, ticketing]
+
+auth_schemes:
+  - scheme_name: trello_oauth
+    auth_mode: OAUTH1
+    # client_id, client_secret will be provided upon request.
+    # Default parameters and fields are determined based on auth_mode
+    authorization_url: "https://trello.com/1/OAuthAuthorizeToken"
+    token_url: "https://trello.com/1/OAuthGetAccessToken"
+    default_scopes: []
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    token_request_auth_method: basic
+    proxy:
+      base_url: "{{base_url}}"
+
+    authorization_params:
+        response_type: code
+        owner: user
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for trello API requests. For more information, visit https://developer.atlassian.com/cloud/trello/rest/"
+        type: string
+        default: https://api.trello.com
