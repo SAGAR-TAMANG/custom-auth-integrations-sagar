@@ -1,5 +1,5 @@
-name: Google-Sheets
-unique_key: "google-sheets"
+name: "Google Sheets"
+unique_key: "google_sheets"
 description: Google Sheets is a web-based spreadsheet program that is part of the Google Drive office suite.
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Google_Sheets_2020_Logo.svg/872px-Google_Sheets_2020_Logo.svg.png
 categories: [productivity, spreadsheets]
