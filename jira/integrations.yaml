@@ -17,14 +17,5 @@ auth_schemes:
     token_request_auth_method: basic
     proxy:
       base_url: "{{base_url}}"
-
     authorization_params:
         response_type: code
-        owner: user
-
-    fields:
-      - name: base_url
-        displayName: Base URL
-        description: "The base URL for jira API requests. For more information, visit https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#about"
-        type: string
-        default: https://api.atlassian.com
