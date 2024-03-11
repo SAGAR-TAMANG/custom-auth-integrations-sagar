@@ -1,5 +1,5 @@
 extends: base/notion/integrations.yaml
-unique_id: notion
+unique_key: notion
 name: Notion
 description: A modern project management tool designed for efficiency and performance.
 logo: https://i.imgur.com/98qPYXd.png

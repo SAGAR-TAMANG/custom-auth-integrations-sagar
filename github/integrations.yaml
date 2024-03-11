@@ -1,5 +1,5 @@
 extends: base/github/integrations.yaml
-unique_id: github
+unique_key: github
 name: Github
 description: A collaborative platform for software development and project management.
 logo: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png

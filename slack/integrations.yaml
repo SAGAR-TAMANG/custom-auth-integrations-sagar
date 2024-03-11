@@ -1,5 +1,5 @@
 extends: base/slack/integrations.yaml
-unique_id: slack
+unique_key: slack
 name: Slack
 description: A cloud-based team communication platform.
 logo: https://assets-global.website-files.com/621c8d7ad9e04933c4e51ffb/65eba5ffa14998827c92cc01_slack-octothorpe-p-500.png
