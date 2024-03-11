@@ -20,7 +20,7 @@ auth_schemes:
     authorization_params:
         response_type: code
     token_params:
-        response_type: code
+        grant_type: authorization_code
 
     fields:
       - name: base_url
