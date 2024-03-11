@@ -14,9 +14,12 @@ auth_schemes:
     token_url: "https://auth.atlassian.com/oauth/token"
     default_scopes: ["read:jira-user read:jira-work write:jira-work"]
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
-    token_request_auth_method: basic
+    # token_request_auth_method: basic
     proxy:
       base_url: "{{base_url}}"
+
+    token_params:
+        grant_type: authorization_code
 
     authorization_params:
         audience: api.atlassian.com
