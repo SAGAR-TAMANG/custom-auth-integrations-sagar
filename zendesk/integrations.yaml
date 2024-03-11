@@ -1,3 +1,5 @@
+extends: base/zendesk/integrations.yaml
+unique_id: zendesk
 name: Zendesk
 description: Provides Saas products related to customer support, sales, and other customer communications.
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Zendesk_logo.svg/2560px-Zendesk_logo.svg.png

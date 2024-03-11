@@ -1,3 +1,5 @@
+extends: base/asana/integrations.yaml
+unique_id: asana
 name: Asana
 description: Tool to help teams organize, track, and manage their work.
 logo: https://assets.asana.biz/m/7342a96f034ee491/original/trademark-logo-lockup-horizontal.png

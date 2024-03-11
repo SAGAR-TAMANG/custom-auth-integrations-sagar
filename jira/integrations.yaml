@@ -1,3 +1,5 @@
+extends: base/jira/integrations.yaml
+unique_id: jira
 name: Jira
 description: A tool for bug tracking, issue tracking and agile project management.
 logo: https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg

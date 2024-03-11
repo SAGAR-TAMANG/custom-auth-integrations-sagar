@@ -1,3 +1,5 @@
+extends: base/hubspot/integrations.yaml
+unique_id: hubspot
 name: Hubspot
 description: Provides software products for inbound marketing, sales, and customer service.
 logo: https://upload.wikimedia.org/wikipedia/commons/3/3f/HubSpot_Logo.svg

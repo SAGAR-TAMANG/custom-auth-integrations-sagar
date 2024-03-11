@@ -1,3 +1,5 @@
+extends: base/calendly/integrations.yaml
+unique_id: calendly
 name: Calendly
 description: A business communication platform used for teams to schedule, prepare and follow up on external meetings.
 logo: https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Calendly_company_logo.png/330px-Calendly_company_logo.png

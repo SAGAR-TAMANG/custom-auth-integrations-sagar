@@ -1,3 +1,5 @@
+extends: base/trello/integrations.yaml
+unique_id: trello
 name: Trello
 description: A web-based, kanban-style, list-making application.
 logo: https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Trello_logo.svg/189px-Trello_logo.svg.png?20210216184934
