@@ -1,30 +1,20 @@
-extends: base/hubspot/integrations.yaml
-unique_key: hubspot
 name: Hubspot
-description: Provides software products for inbound marketing, sales, and customer service.
-logo: https://upload.wikimedia.org/wikipedia/commons/3/3f/HubSpot_Logo.svg
+unique_key: hubspot
+description: HubSpot is a developer and marketer of software products for inbound marketing, sales, and customer service.
+logo: https://upload.wikimedia.org/wikipedia/commons/a/a4/HubSpot_Logo.svg
 categories: [marketing, support]
 
 auth_schemes:
   - scheme_name: hubspot_oauth
     auth_mode: OAUTH2
-    # client_id, client_secret will be provided upon request.
-    # Default parameters and fields are determined based on auth_mode
-    authorization_url: "https://app.hubspot.com/oauth/authorize"
-    token_url: "https://api.hubapi.com/oauth/v1/token"
-    default_scopes: ["contacts automation"]
-    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
-    token_request_auth_method: basic
-    proxy:
-      base_url: "{{base_url}}"
-
-    authorization_params:
-        response_type: code
-        owner: user
+    authorization_url: https://app.hubspot.com/oauth/authorize
+    token_url: https://api.hubapi.com/oauth/v1/token
+    default_scopes: ["portalId"]
+    scope_separator: ','
 
     fields:
       - name: base_url
         displayName: Base URL
-        description: "The base URL for hubspot API requests. For more information, visit https://developers.hubspot.com/docs/api/overview"
+        description: "The base URL for Hubspot API requests. For more information, visit https://developers.hubspot.com/"
         type: string
         default: https://api.hubapi.com
