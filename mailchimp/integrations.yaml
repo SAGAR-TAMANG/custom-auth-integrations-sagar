@@ -9,8 +9,6 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: https://login.mailchimp.com/oauth2/authorize
     token_url: https://login.mailchimp.com/oauth2/token
-    token_params:
-        grant_type: authorization_code
     authorization_params:
         response_type: code
     proxy:
