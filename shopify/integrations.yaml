@@ -20,6 +20,7 @@ auth_schemes:
 
     fields:
       - name: subdomain
+        expected_from_customer: true
         displayName: Store Subdomain
         description: "Your Shopify store's subdomain (e.g., your-store-name in your-store-name.myshopify.com)"
         type: string
