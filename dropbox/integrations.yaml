@@ -11,9 +11,6 @@ auth_schemes:
     token_url: https://api.dropboxapi.com/oauth2/token
     authorization_params:
         response_type: code
-        token_access_type: offline
-        force_reapprove: true
-    default_scopes: ['files.content.write', 'files.content.read', 'sharing.read', 'account_info.read']
 
     fields:
       - name: base_url
@@ -21,14 +18,3 @@ auth_schemes:
         description: "The base URL for Dropbox API requests. For more information, visit https://developers.dropbox.com/"
         type: string
         default: https://api.dropboxapi.com
-
-      - name: accessType
-        displayName: APP Access Type
-        description: "The access type for the Dropbox app. Can be 'folder' for App Folder access, or 'full' for Full Dropbox access."
-        type: string
-        default: full
-        options:
-          - name: App Folder
-            value: folder
-          - name: Full Dropbox
-            value: full
