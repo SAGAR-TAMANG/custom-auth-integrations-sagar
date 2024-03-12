@@ -1,0 +1,26 @@
+name: Miro
+unique_key: miro
+description: Miro is a collaborative online whiteboard platform designed for remote and distributed teams.
+logo: https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Mir_company_logo_with_text.tiff/lossless-page1-440px-Mir_company_logo_with_text.tiff.png
+categories: [design, productivity]
+
+auth_schemes:
+  - scheme_name: miro_oauth
+    auth_mode: OAUTH2
+    authorization_url: https://miro.com/oauth/authorize
+    token_url: https://api.miro.com/v1/oauth/token
+    authorization_params:
+        response_type: code
+    token_params:
+        grant_type: authorization_code
+    refresh_params:
+        grant_type: refresh_token
+    proxy:
+      base_url: https://api.miro.com
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Miro API requests. For more information, visit https://developers.miro.com/"
+        type: string
+        default: https://api.miro.com
