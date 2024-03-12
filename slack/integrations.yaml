@@ -1,30 +1,20 @@
-extends: base/slack/integrations.yaml
-unique_key: slack
 name: Slack
-description: A cloud-based team communication platform.
-logo: https://assets-global.website-files.com/621c8d7ad9e04933c4e51ffb/65eba5ffa14998827c92cc01_slack-octothorpe-p-500.png
+unique_key: slack
+description: Slack is a channel-based messaging platform. With Slack, people can work together more effectively, connect all their software tools and services, and find the information they need to do their best work — all within a secure, enterprise-grade environment.
+logo: https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg
 categories: [productivity]
 
 auth_schemes:
   - scheme_name: slack_oauth
     auth_mode: OAUTH2
-    # client_id, client_secret will be provided upon request.
-    # Default parameters and fields are determined based on auth_mode
-    authorization_url: "https://slack.com/oauth/v2/authorize"
-    token_url: "https://slack.com/api/oauth.v2.access"
-    default_scopes: []
-    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
-    token_request_auth_method: basic
-    proxy:
-      base_url: "{{base_url}}"
-
-    authorization_params:
-        response_type: code
-        owner: user
+    authorization_url: https://slack.com/oauth/v2/authorize
+    token_url: https://slack.com/api/oauth.v2.access
+    default_scopes: ["incoming_webhook", "bot_user_id", "team.id"]
+    scope_separator: ','
 
     fields:
       - name: base_url
         displayName: Base URL
-        description: "The base URL for slack API requests. For more information, visit https://api.slack.com/web"
+        description: "The base URL for Slack API requests. For more information, visit https://api.slack.com/"
         type: string
         default: https://slack.com/api
