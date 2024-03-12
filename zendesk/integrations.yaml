@@ -14,7 +14,6 @@ auth_schemes:
     token_url: "https://{{subdomain}}.zendesk.com/oauth/tokens"
     default_scopes: []
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
-    token_request_auth_method: basic
     proxy:
       base_url: "https://{{subdomain}}.zendesk.com"
 
