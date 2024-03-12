@@ -10,8 +10,10 @@ auth_schemes:
     authorization_url: https://www.dropbox.com/oauth2/authorize
     token_url: https://api.dropboxapi.com/oauth2/token
     authorization_params:
-        response_type: code
-
+      response_type: code
+      token_access_type: offline
+    token_params:
+      grant_type: authorization_code
     fields:
       - name: base_url
         displayName: Base URL
