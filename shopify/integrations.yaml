@@ -1,0 +1,26 @@
+name: Shopify
+unique_key: shopify
+description: A leading global commerce platform that allows anyone to sell online and in person.
+logo: https://download.logo.wine/logo/Shopify/Shopify-Logo.wine.png
+categories: [e-commerce]
+
+auth_schemes:
+  - scheme_name: shopify_oauth
+    auth_mode: OAUTH2
+    authorization_url: https://{{connectionConfig.subdomain}}.myshopify.com/admin/oauth/authorize
+    token_url: https://{{connectionConfig.subdomain}}.myshopify.com/admin/oauth/access_token
+    authorization_params:
+      response_type: code
+    token_params:
+      grant_type: authorization_code
+    proxy:
+      base_url: https://{{connectionConfig.subdomain}}.myshopify.com
+      headers:
+        X-Shopify-Access-Token: "{{accessToken}}"
+
+    fields:
+      - name: subdomain
+        displayName: Store Subdomain
+        description: "Your Shopify store's subdomain (e.g., your-store-name in your-store-name.myshopify.com)"
+        type: string
+        required: true
