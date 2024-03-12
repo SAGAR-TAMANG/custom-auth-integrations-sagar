@@ -10,7 +10,7 @@ auth_schemes:
     authorization_url: https://slack.com/oauth/v2/authorize
     token_url: https://slack.com/api/oauth.v2.access
     token_response_metadata: [incoming_webhook, bot_user_id, team.id]
-    default_scopes: ["admin admin.apps:read admin.apps:write"]
+    default_scopes: ["admin","admin.apps:read", "admin.apps:write"]
     authorization_params:
         response_type: code
     token_params:
