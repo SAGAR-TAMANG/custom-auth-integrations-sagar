@@ -1,0 +1,20 @@
+name: Mailchimp
+unique_key: mailchimp
+description: Mailchimp is an all-in-one Marketing Platform for small businesses.
+logo: https://static.wikia.nocookie.net/logopedia/images/7/70/MailChimp_Freddie.png/revision/latest?cb=20130718223828
+categories: [marketing, surveys]
+
+auth_schemes:
+  - scheme_name: mailchimp_oauth
+    auth_mode: OAUTH2
+    authorization_url: https://login.mailchimp.com/oauth2/authorize
+    token_url: https://login.mailchimp.com/oauth2/token
+    authorization_params:
+        response_type: code
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Mailchimp API requests. For more information, visit https://developers.mailchimp.com/"
+        type: string
+        default: https://api.mailchimp.com
