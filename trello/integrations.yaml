@@ -10,17 +10,16 @@ auth_schemes:
     auth_mode: OAUTH1
     # client_id, client_secret will be provided upon request.
     # Default parameters and fields are determined based on auth_mode
+    request_url: https://trello.com/1/OAuthGetRequestToken
     authorization_url: "https://trello.com/1/OAuthAuthorizeToken"
     token_url: "https://trello.com/1/OAuthGetAccessToken"
+    signature_method: 'HMAC-SHA1'
+    scope_separator: ','
+    authorization_params:
+        expiration: never
     default_scopes: []
-    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
-    token_request_auth_method: basic
     proxy:
       base_url: "{{base_url}}"
-
-    authorization_params:
-        response_type: code
-        owner: user
 
     fields:
       - name: base_url
