@@ -10,22 +10,23 @@ auth_schemes:
     auth_mode: OAUTH2
     # client_id, client_secret will be provided upon request.
     # Default parameters and fields are determined based on auth_mode
-    authorization_url: "https://${connectionConfig.subdomain}.zendesk.com/oauth/authorizations/new"
-    token_url: "https://${connectionConfig.subdomain}.zendesk.com/oauth/tokens"
+    authorization_url: "https://{{subdomain}}.zendesk.com/oauth/authorizations/new"
+    token_url: "https://{{subdomain}}.zendesk.com/oauth/tokens"
     default_scopes: []
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     token_request_auth_method: basic
     proxy:
-      base_url: "{{base_url}}"
+      base_url: "https://{{subdomain}}.zendesk.com"
 
     authorization_params:
         response_type: code
         owner: user
 
     fields:
-      - name: base_url
-        displayName: Base URL
-        description: "The base URL for zendesk API requests. For more information, visit https://developer.zendesk.com/api-reference/"
+      - name: subdomain
+        expected_from_customer: true
+        displayName: Store Subdomain
+        description: "Your Shopify store's subdomain (e.g., your-store-name in your-store-name.myshopify.com)"
         type: string
-        default: https://${connectionConfig.subdomain}.zendesk.com
+        required: true
 
