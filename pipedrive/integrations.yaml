@@ -14,6 +14,8 @@ auth_schemes:
     proxy:
       base_url: ${connectionConfig.api_domain}/api
       decompress: true
+    authorization_params:
+      response_type: code
 
     fields:
       - name: api_domain
