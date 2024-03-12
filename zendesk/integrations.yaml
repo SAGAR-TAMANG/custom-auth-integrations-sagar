@@ -25,8 +25,8 @@ auth_schemes:
     fields:
       - name: subdomain
         expected_from_customer: true
-        displayName: Store Subdomain
-        description: "Your Shopify store's subdomain (e.g., your-store-name in your-store-name.myshopify.com)"
+        displayName: Zendesk Subdomain
+        description: "Your Zendesk subdomain (e.g., your-company-name in your-company-name.zendesk.com)"
         type: string
         required: true
 
