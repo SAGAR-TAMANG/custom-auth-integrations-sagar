@@ -1,16 +1,14 @@
-unique_key: attio
 name: Attio
-description: A modern project management tool designed for efficiency and performance.
-logo: https://i.imgur.com/98qPYXd.png
+unique_key: attio
+description: Attio is a fully customizable workspace for your team's relationships and workflows.
+logo: https://attio.com/images/meta.png
 categories: [crm]
 
 auth_schemes:
   - scheme_name: attio_oauth
     auth_mode: OAUTH2
-    # client_id, client_secret will be provided upon request.
-    # Default parameters and fields are determined based on auth_mode
-    authorization_url: "https://app.attio.com/authorize"
-    token_url: "https://app.attio.com/oauth/token"
+    authorization_url: https://app.attio.com/authorize
+    token_url: https://app.attio.com/oauth/token
     token_params:
         grant_type: authorization_code
     authorization_params:
@@ -21,6 +19,6 @@ auth_schemes:
     fields:
       - name: base_url
         displayName: Base URL
-        description: "The base URL for notion API requests. For more information, visit https://developers.attio.com/docs/getting-started"
+        description: "The base URL for Attio API requests. For more information, visit https://developers.attio.com/"
         type: string
-        default: https://app.attio.com/
+        default: https://app.attio.com
