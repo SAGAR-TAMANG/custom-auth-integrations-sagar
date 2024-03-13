@@ -11,16 +11,12 @@ auth_schemes:
     # Default parameters and fields are determined based on auth_mode
     authorization_url: "https://app.attio.com/authorize"
     token_url: "https://app.attio.com/oauth/token"
-    default_scopes: []
     token_params:
         grant_type: authorization_code
-    refresh_params:
-        grant_type: refresh_token
-    proxy:
-      base_url: "{{base_url}}"
-
     authorization_params:
         response_type: code
+    proxy:
+      base_url: "{{base_url}}"
 
     fields:
       - name: base_url
