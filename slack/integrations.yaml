@@ -14,8 +14,6 @@ auth_schemes:
     authorization_params:
         response_type: code
         user_scopes: "admin"
-    token_params:
-        grant_type: authorization_code
 
     fields:
       - name: base_url
