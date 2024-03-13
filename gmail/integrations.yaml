@@ -1,4 +1,5 @@
 name: Gmail
+docs: https://docs.composio.dev/docs/gmail
 unique_key: gmail
 description: Gmail is a free email service developed by Google.
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1024px-Gmail_icon_%282020%29.svg.png

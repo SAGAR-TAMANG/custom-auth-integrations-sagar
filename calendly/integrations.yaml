@@ -1,4 +1,5 @@
 extends: base/calendly/integrations.yaml
+docs: https://docs.composio.dev/docs/calendly
 unique_key: calendly
 name: Calendly
 description: A business communication platform used for teams to schedule, prepare and follow up on external meetings.

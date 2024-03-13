@@ -1,4 +1,5 @@
 name: Google
+docs: https://docs.composio.dev/docs/google
 unique_key: google
 description: A variety of services provided by Google including Gmail, Google Drive, Google Calendar, and more.
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png

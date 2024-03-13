@@ -1,4 +1,5 @@
 extends: base/discord/integrations.yaml
+docs: https://docs.composio.dev/docs/discord
 unique_key: discord
 name: Discord
 description: An instant messaging and VoIP social platform.

@@ -1,4 +1,5 @@
 name: "Google Sheets"
+docs: https://docs.composio.dev/docs/google-sheets
 unique_key: "google-sheets"
 description: Google Sheets is a web-based spreadsheet program that is part of the Google Drive office suite.
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Google_Sheets_2020_Logo.svg/872px-Google_Sheets_2020_Logo.svg.png

@@ -1,4 +1,5 @@
 extends: base/hubspot/integrations.yaml
+docs: https://docs.composio.dev/docs/hubspot
 name: Hubspot
 unique_key: hubspot
 description: HubSpot is a developer and marketer of software products for inbound marketing, sales, and customer service.

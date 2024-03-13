@@ -1,4 +1,5 @@
 name: Slack
+docs: https://docs.composio.dev/docs/slack
 unique_key: slack
 description: Slack is a channel-based messaging platform. With Slack, people can work together more effectively, connect all their software tools and services, and find the information they need to do their best work — all within a secure, enterprise-grade environment.
 logo: https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg

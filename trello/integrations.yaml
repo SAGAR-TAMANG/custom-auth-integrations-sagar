@@ -1,4 +1,5 @@
 extends: base/trello/integrations.yaml
+docs: https://docs.composio.dev/docs/trello
 unique_key: trello
 name: Trello
 description: A web-based, kanban-style, list-making application.

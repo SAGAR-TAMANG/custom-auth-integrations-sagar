@@ -1,4 +1,5 @@
 name: ClickUp
+docs: https://docs.composio.dev/docs/clickup
 unique_key: clickup
 description: ClickUp is a productivity platform that provides a fundamentally new way to work.
 logo: https://clickup.com/images/for-se-page/clickup.png

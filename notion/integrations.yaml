@@ -1,4 +1,5 @@
 extends: base/notion/integrations.yaml
+docs: https://docs.composio.dev/docs/notion
 unique_key: notion
 name: Notion
 description: A modern project management tool designed for efficiency and performance.

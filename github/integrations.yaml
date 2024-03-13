@@ -1,4 +1,5 @@
 extends: base/github/integrations.yaml
+docs: https://docs.composio.dev/docs/github
 unique_key: github
 name: Github
 description: A collaborative platform for software development and project management.
