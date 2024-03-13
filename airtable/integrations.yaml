@@ -12,8 +12,11 @@ auth_schemes:
     # Default parameters and fields are determined based on auth_mode
     authorization_url: "https://airtable.com/oauth2/v1/authorize"
     token_url: "https://airtable.com/oauth2/v1/token"
-    auth:
+    default_scopes: ["data.records:read"]
+    authorization_params:
         response_type: code
+    token_params:
+        grant_type: authorization_code
     proxy:
       base_url: "{{base_url}}"
 
@@ -22,4 +25,4 @@ auth_schemes:
         displayName: Base URL
         description: "The base URL for airtable API requests. For more information, visit https://airtable.com/developers/web/api/introduction"
         type: string
-        default: https://api.airtable.com
+        default: https://api.airtable.com/v0
