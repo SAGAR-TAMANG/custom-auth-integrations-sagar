@@ -14,8 +14,6 @@ auth_schemes:
     default_scopes: []
     token_params:
         grant_type: authorization_code
-    auth:
-        response_type: code
     refresh_params:
         grant_type: refresh_token
     proxy:
@@ -23,7 +21,6 @@ auth_schemes:
 
     authorization_params:
         response_type: code
-        owner: user
 
     fields:
       - name: base_url
