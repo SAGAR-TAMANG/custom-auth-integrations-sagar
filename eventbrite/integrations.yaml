@@ -1,4 +1,6 @@
 name: Eventbrite
+docs: https://www.eventbrite.com/platform/api
+unique_key: eventbrite
 description: An event management and ticketing website.
 logo: https://upload.wikimedia.org/wikipedia/commons/e/e4/Eventbrite_Logo.svg
 categories: [marketing]
@@ -16,10 +18,6 @@ auth_schemes:
         grant_type: authorization_code
     proxy:
       base_url: "{{base_url}}"
-
-    authorization_params:
-        response_type: code
-        owner: user
 
     fields:
       - name: base_url
