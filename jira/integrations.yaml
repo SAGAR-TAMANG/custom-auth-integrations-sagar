@@ -28,6 +28,7 @@ auth_schemes:
 
     fields:
       - name: base_url
+        expected_from_customer: true 
         displayName: Base URL
         description: "The base URL for jira API requests. For more information, visit https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#about"
         type: string
