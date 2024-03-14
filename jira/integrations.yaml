@@ -3,7 +3,7 @@ docs: https://docs.composio.dev/docs/jira
 unique_key: jira
 name: Jira
 description: A tool for bug tracking, issue tracking and agile project management.
-logo: https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/d9b539471e551d6c14ffd442d172e476edd44b33/jira.svg
 categories: [productivity, ticketing]
 
 auth_schemes:
