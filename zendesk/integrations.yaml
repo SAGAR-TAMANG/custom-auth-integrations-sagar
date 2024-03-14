@@ -13,7 +13,7 @@ auth_schemes:
     # Default parameters and fields are determined based on auth_mode
     authorization_url: "https://{{subdomain}}.zendesk.com/oauth/authorizations/new"
     token_url: "https://{{subdomain}}.zendesk.com/oauth/tokens"
-    default_scopes: ["users:read users:write"]
+    default_scopes: ["users:read users:write tickets:read tickets:write"]
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     proxy:
       base_url: "https://{{subdomain}}.zendesk.com"
