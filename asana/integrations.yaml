@@ -19,8 +19,6 @@ auth_schemes:
         grant_type: authorization_code
     proxy:
       base_url: "{{base_url}}"
-    code_challenge: BASE64URL-ENCODE(SHA256(ASCII(code_verifier)))
-    code_challenge_method: S256
 
     authorization_params:
         response_type: code

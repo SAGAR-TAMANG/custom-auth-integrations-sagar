@@ -11,6 +11,8 @@ auth_schemes:
     token_url: https://airtable.com/oauth2/v1/token
     authorization_params:
         response_type: code
+        code_challenge: BASE64URL-ENCODE(SHA256(ASCII(code_verifier)))
+        code_challenge_method: S256
     token_params:
         grant_type: authorization_code
     default_scopes: ["data.records:write data.records:read"]
