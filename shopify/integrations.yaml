@@ -2,7 +2,7 @@ name: Shopify
 docs: https://docs.composio.dev/docs/shopify
 unique_key: shopify
 description: A leading global commerce platform that allows anyone to sell online and in person.
-logo: https://download.logo.wine/logo/Shopify/Shopify-Logo.wine.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/853011bff173624654a8f7b64b2399cf2d9e84b3/shopify.svg
 categories: [e-commerce]
 
 auth_schemes:

@@ -3,7 +3,7 @@ docs: https://docs.composio.dev/docs/notion
 unique_key: notion
 name: Notion
 description: A modern project management tool designed for efficiency and performance.
-logo: https://i.imgur.com/98qPYXd.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/853011bff173624654a8f7b64b2399cf2d9e84b3/notion.svg
 categories: [project management, productivity]
 
 auth_schemes:

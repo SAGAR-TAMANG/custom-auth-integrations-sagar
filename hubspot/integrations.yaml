@@ -3,7 +3,7 @@ docs: https://docs.composio.dev/docs/hubspot
 name: Hubspot
 unique_key: hubspot
 description: HubSpot is a developer and marketer of software products for inbound marketing, sales, and customer service.
-logo: https://upload.wikimedia.org/wikipedia/commons/a/a4/HubSpot_Logo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/853011bff173624654a8f7b64b2399cf2d9e84b3/hubspot.svg
 categories: [marketing, support]
 
 auth_schemes:
