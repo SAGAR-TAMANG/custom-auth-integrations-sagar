@@ -3,7 +3,7 @@ docs: https://docs.composio.dev/docs/discord
 unique_key: discord
 name: Discord
 description: An instant messaging and VoIP social platform.
-logo: https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df29d55a92d945_full_logo_blurple_RGB.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/7b582f4884cc7012ddff55ef7f811bdd5892fc78/discord.svg
 categories: [gaming, social]
 
 auth_schemes:

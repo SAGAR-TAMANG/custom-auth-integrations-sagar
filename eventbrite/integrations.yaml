@@ -2,7 +2,7 @@ name: Eventbrite
 docs: https://www.eventbrite.com/platform/api
 unique_key: eventbrite
 description: An event management and ticketing website.
-logo: https://upload.wikimedia.org/wikipedia/commons/e/e4/Eventbrite_Logo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/d9b539471e551d6c14ffd442d172e476edd44b33/eventbrite.svg
 categories: [marketing]
 
 auth_schemes:
