@@ -1,0 +1,21 @@
+name: PagerDuty
+unique_key: pagerduty
+description: PagerDuty is an incident management platform that provides reliable incident notifications via email, push, SMS, and phone, as well as automatic escalations, on-call scheduling, and other functionality to help teams detect and fix infrastructure problems quickly.
+logo: https://upload.wikimedia.org/wikipedia/commons/7/76/PagerDuty_logo.svg
+categories: [dev-tools]
+
+auth_schemes:
+  - scheme_name: pagerduty_oauth
+    auth_mode: OAUTH2
+    authorization_url: https://app.pagerduty.com/oauth/authorize
+    token_url: https://app.pagerduty.com/oauth/token
+
+    proxy:
+    base_url: "{{base_url}}"
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for PagerDuty API requests. For more information, visit https://developer.pagerduty.com/"
+        type: string
+        default: https://api.pagerduty.com
