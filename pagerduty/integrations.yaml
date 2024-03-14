@@ -1,7 +1,7 @@
 name: PagerDuty
 unique_key: pagerduty
 description: PagerDuty is an incident management platform that provides reliable incident notifications via email, push, SMS, and phone, as well as automatic escalations, on-call scheduling, and other functionality to help teams detect and fix infrastructure problems quickly.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/f048a9cd46a2bc59a591f2a3649d8a4678850cf4/pagerduty.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/c6eb204a39d80110fe0fad24299a810b4af03898/pagerduty.svg
 categories: [dev-tools]
 
 auth_schemes:
