@@ -2,7 +2,7 @@ name: Pipedrive
 docs: https://docs.composio.dev/docs/pipedrive
 unique_key: pipedrive
 description: Pipedrive is a web-based Sales CRM and pipeline management solution that enables businesses to plan their sales activities and monitor deals.
-logo: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Pipedrive_logo.svg/500px-Pipedrive_logo.svg.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/d9b539471e551d6c14ffd442d172e476edd44b33/pipedrive.svg
 categories: [crm]
 
 auth_schemes:
