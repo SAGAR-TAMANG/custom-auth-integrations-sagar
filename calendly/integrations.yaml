@@ -3,7 +3,7 @@ docs: https://docs.composio.dev/docs/calendly
 unique_key: calendly
 name: Calendly
 description: A business communication platform used for teams to schedule, prepare and follow up on external meetings.
-logo: https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Calendly_company_logo.png/330px-Calendly_company_logo.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/c87c4d798b14edfd690b9c64d6d9fbe99997693c/calendly.svg
 categories: [productivity]
 
 auth_schemes:
