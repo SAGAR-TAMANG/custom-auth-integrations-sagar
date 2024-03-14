@@ -1,0 +1,25 @@
+name: Monday
+unique_key: monday
+description: Monday is a cloud-based work operating system where teams create workflow apps in minutes to run their processes, projects, and everyday work.
+logo: <insert_monday_logo_url_here>
+categories: [productivity, ticketing]
+
+auth_schemes:
+  - scheme_name: monday_oauth
+    auth_mode: OAUTH2
+    authorization_url: https://auth.monday.com/oauth2/authorize
+    token_url: https://auth.monday.com/oauth2/token
+    authorization_params:
+      response_type: code
+    token_params:
+      grant_type: authorization_code
+    default_scopes: ["users:read users:write"]
+    proxy:
+      base_url: "{{base_url}}"
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Monday API requests. For more information, visit <insert_monday_docs_url_here>"
+        type: string
+        default: https://api.monday.com
