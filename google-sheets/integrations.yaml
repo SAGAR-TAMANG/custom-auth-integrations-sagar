@@ -2,7 +2,7 @@ name: "Google Sheets"
 docs: https://docs.composio.dev/docs/google-sheets
 unique_key: "google-sheets"
 description: Google Sheets is a web-based spreadsheet program that is part of the Google Drive office suite.
-logo: https://github.com/SamparkAI/open-logos/blob/master/google-sheets.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/853011bff173624654a8f7b64b2399cf2d9e84b3/google-sheets.svg
 categories: [productivity, spreadsheets]
 
 auth_schemes:
