@@ -3,7 +3,7 @@ docs: https://docs.composio.dev/docs/trello
 unique_key: trello
 name: Trello
 description: A web-based, kanban-style, list-making application.
-logo: https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Trello_logo.svg/189px-Trello_logo.svg.png?20210216184934
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/4ae413616c4767cac41f662e7d770cd0906539a8/trello.svg
 categories: [productivity, ticketing]
 
 auth_schemes:
