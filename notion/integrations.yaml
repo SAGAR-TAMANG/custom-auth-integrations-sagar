@@ -33,7 +33,7 @@ auth_schemes:
         displayName: Base URL
         description: "The base URL for notion API requests. For more information, visit https://developers.notion.app/docs/api"
         type: string
-        default: https://api.notion.app
+        default: https://api.notion.com
 
   - scheme_name: notion_api_key
     auth_mode: API_KEY
@@ -55,4 +55,4 @@ auth_schemes:
         description: "The base URL for notion API requests. For more information, visit https://developers.notion.app/docs/api"
         type: string
         required: false
-        default: https://api.notion.app
+        default: https://api.notion.com
