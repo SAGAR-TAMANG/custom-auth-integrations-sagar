@@ -3,7 +3,7 @@ unique_key: asana
 docs: https://docs.composio.dev/docs/asana
 name: Asana
 description: Tool to help teams organize, track, and manage their work.
-logo: https://assets.asana.biz/m/7342a96f034ee491/original/trademark-logo-lockup-horizontal.png
+logo: https://github.com/SamparkAI/open-logos/blob/master/asana.svg
 categories: [productivity, ticketing]
 
 auth_schemes:
