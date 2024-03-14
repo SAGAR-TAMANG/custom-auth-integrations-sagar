@@ -2,7 +2,7 @@ name: "Google Drive"
 docs: https://docs.composio.dev/docs/google-drive
 unique_key: "google-drive"
 description: Google Drive is a file storage and synchronization service developed by Google.
-logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/200px-Google_Drive_icon_%282020%29.svg.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/d9b539471e551d6c14ffd442d172e476edd44b33/google-drive.svg
 categories: [productivity, storage]
 
 auth_schemes:
