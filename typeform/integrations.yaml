@@ -1,0 +1,25 @@
+name: Typeform
+unique_key: typeform
+description: Typeform is an online software as a service (SaaS) company that specializes in online form building and online surveys.
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/e320d8eeef9fa519afef913f6c4b272fc6391295/typeform.svg
+categories: [surveys]
+
+auth_schemes:
+  - scheme_name: typeform_oauth
+    auth_mode: OAUTH2
+    authorization_url: https://api.typeform.com/oauth/authorize
+    token_url: https://api.typeform.com/oauth/token
+    default_scopes: ["forms:read forms:write"]
+    scope_separator: ','
+    authorization_params:
+        response_type: code
+    token_params:
+        grant_type: authorization_code
+    refresh_params:
+        grant_type: refresh_token
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Typeform API requests. For more information, visit https://developer.typeform.com/"
+        type: string
+        default: https://api.typeform.com
