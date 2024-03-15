@@ -1,0 +1,27 @@
+name: intercom
+unique_key: intercom
+docs: https://developers.intercom.com/intercom-api-reference/reference
+description: A messaging platform that allows businesses to communicate with prospective and existing customers within their app, on their website, through social media, or via email.
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/8ff92e94cc31695d69a51596e192487b4c74443f/intercom.svg
+categories: [marketing, support, surveys, ticketing]
+
+auth_schemes:
+  - scheme_name: OAuth2
+    auth_mode: OAUTH2
+    authorization_url: https://app.intercom.io/oauth
+    token_url: https://api.intercom.io/auth/eagle/token
+
+    token_params:
+      grant_type: authorization_code
+    authorization_params:
+      response_type: code
+
+    proxy:
+      base_url: "{{base_url}}"
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "Base URL for Intercom API requests."
+        type: string
+        default: "https://api.intercom.io"
