@@ -2,7 +2,7 @@ name: intercom
 unique_key: intercom
 docs: https://developers.intercom.com/intercom-api-reference/reference
 description: A messaging platform that allows businesses to communicate with prospective and existing customers within their app, on their website, through social media, or via email.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/8ff92e94cc31695d69a51596e192487b4c74443f/intercom.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/97574102234c28df35d55f7698003eedbed2f015/intercom.svg
 categories: [marketing, support, surveys, ticketing]
 
 auth_schemes:
