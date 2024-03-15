@@ -11,19 +11,34 @@ auth_schemes:
     authorization_url: "https://api.gusto.com/oauth/authorize"
     token_url: "https://api.gusto.com/oauth/token"
     default_scopes: ["employees:read employees:write"]
-
+    token_response_metadata:
+      ["access_token", "token_type", "expires_in", "refresh_token", "scope"]
     token_params:
       grant_type: authorization_code
+      client_id: PdYEG0cYGRBXEuQvIF3bKdYg96xpRRqqwvAsSm83Hls
+      client_secret: MM51kiUbwBuQSBb2iDArwKCMdcQiJ1tw3ktafovOJX8
+      redirect_uri: https://backend.composio.dev/api/v1/auth-apps/gusto/connection/oauth2/add
+
     authorization_params:
       response_type: code
-
-    client_authentication:
-      method: header
-
     proxy:
       base_url: "{{base_url}}"
-
     fields:
+      - name: client_id
+        displayName: Client ID
+        description: "Your Gusto application's client ID"
+        type: string
+        default: ""
+      - name: client_secret
+        displayName: Client Secret
+        description: "Your Gusto application's client secret"
+        type: string
+        default: ""
+      - name: redirect_uri
+        displayName: Redirect URI
+        description: "Your application's redirect URI"
+        type: string
+        default: ""
       - name: base_url
         displayName: Base URL
         description: "API base URL"
