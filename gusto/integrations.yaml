@@ -2,7 +2,7 @@ name: gusto
 unique_key: gusto
 docs: https://docs.gusto.com
 description: HR platform for payroll, benefits, and more
-logo: https://logo_link.com/gusto_logo.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/07a1fd8bd624e4a2d107cce3a78d2992826ff457/gusto.svg
 categories: [hr]
 
 auth_schemes:
