@@ -1,0 +1,28 @@
+name: gusto
+unique_key: gusto
+docs: https://docs.gusto.com
+description: HR platform for payroll, benefits, and more
+logo: https://logo_link.com/gusto_logo.png
+categories: [hr]
+
+auth_schemes:
+  - scheme_name: OAUTH2
+    auth_mode: OAUTH2
+    authorization_url: "https://api.gusto.com/oauth/authorize"
+    token_url: "https://api.gusto.com/oauth/token"
+    default_scopes: ["employees:read employees:write"]
+
+    token_params:
+      grant_type: authorization_code
+    authorization_params:
+      response_type: code
+
+    proxy:
+      base_url: "{{base_url}}"
+
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "API base URL"
+        type: string
+        default: https://api.gusto.com
