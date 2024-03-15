@@ -17,6 +17,9 @@ auth_schemes:
     authorization_params:
       response_type: code
 
+    client_authentication:
+      method: header
+
     proxy:
       base_url: "{{base_url}}"
 
