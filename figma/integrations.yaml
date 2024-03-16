@@ -11,6 +11,8 @@ auth_schemes:
     authorization_url: "https://www.figma.com/oauth"
     token_url: "https://www.figma.com/api/oauth/token"
 
+    default_scopes: ["files:read file_comments:write"]
+
     token_params:
       grant_type: authorization_code
     authorization_params:
