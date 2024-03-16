@@ -14,6 +14,7 @@ auth_schemes:
       grant_type: authorization_code
     authorization_params:
       response_type: code
+      state: ""
     proxy:
       base_url: "{{base_url}}"
     fields:
