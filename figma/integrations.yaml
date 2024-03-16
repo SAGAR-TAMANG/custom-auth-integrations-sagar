@@ -1,0 +1,26 @@
+name: figma
+unique_key: figma
+docs: https://www.figma.com/developers/api#auth
+description: A collaborative interface design tool.
+logo: https://static.figma.com/app/icon/1/favicon.png
+categories: [design, productivity]
+
+auth_schemes:
+  - scheme_name: figma_oauth2
+    auth_mode: OAUTH2
+    authorization_url: "https://www.figma.com/oauth"
+    token_url: "https://www.figma.com/api/oauth/token"
+
+    token_params:
+      grant_type: authorization_code
+    authorization_params:
+      response_type: code
+    proxy:
+      base_url: "{{base_url}}"
+      state: "required"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "Base URL for Figma API"
+        type: string
+        default: https://api.figma.com
