@@ -1,4 +1,4 @@
-name: gusto
+name: Gusto
 unique_key: gusto
 docs: https://docs.gusto.com
 description: HR platform for payroll, benefits, and more
@@ -6,15 +6,15 @@ logo: https://raw.githubusercontent.com/SamparkAI/open-logos/07a1fd8bd624e4a2d10
 categories: [hr]
 
 auth_schemes:
-  - scheme_name: OAUTH2
+  - scheme_name: gusto_oauth2
     auth_mode: OAUTH2
     authorization_url: "https://api.gusto.com/oauth/authorize"
     token_url: "https://api.gusto.com/oauth/token"
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     token_params:
       grant_type: authorization_code
     authorization_params:
       response_type: code
-      state: ""
     proxy:
       base_url: "{{base_url}}"
     fields:
