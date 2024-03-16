@@ -13,6 +13,8 @@ auth_schemes:
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     token_params:
       grant_type: authorization_code
+    refresh_params:
+      grant_type: refresh_token
     authorization_params:
       response_type: code
     proxy:
