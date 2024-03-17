@@ -1,0 +1,14 @@
+name: klaviyo
+unique_key: klaviyo
+docs: https://docs.nango.dev/integrations/all/klaviyo
+description: A marketing platform for email, SMS, and more.
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/eb7c779836b82572aadc221a39b0412f78eb1c55/klaviyo.svg
+categories: [marketing]
+
+auth_schemes:
+  - scheme_name: API_KEY
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://a.klaviyo.com"
+      headers:
+        Authorization: "Klaviyo-API-Key ${apiKey}"
