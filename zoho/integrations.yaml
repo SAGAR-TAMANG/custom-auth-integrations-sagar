@@ -18,11 +18,11 @@ auth_schemes:
       prompt: consent
       access_type: offline
     proxy:
-      base_url: "https://www.zohoapis.com"
+      base_url: "https://www.zohoapis.${connectionConfig.extension}"
       state: ""
     fields:
       - name: extension
         displayName: Domain Extension
         description: "The Zoho domain extension (com, eu, in, etc.)"
         type: string
-        default: com
+        default: https://www.zohoapis.com
