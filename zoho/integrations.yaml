@@ -18,7 +18,7 @@ auth_schemes:
       prompt: consent
       access_type: offline
     proxy:
-      base_url: "https://www.zohoapis.${connectionConfig.extension}"
+      base_url: "https://www.zohoapis.com"
       state: ""
     fields:
       - name: extension
