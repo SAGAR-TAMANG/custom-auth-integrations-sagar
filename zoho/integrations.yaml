@@ -25,4 +25,4 @@ auth_schemes:
         displayName: Domain Extension
         description: "The Zoho domain extension (com, eu, in, etc.)"
         type: string
-        default: https://www.zohoapis.com
+        default: https://www.zohoapis.${connectionConfig.extension}
