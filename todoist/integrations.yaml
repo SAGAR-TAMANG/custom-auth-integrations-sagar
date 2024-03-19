@@ -2,7 +2,7 @@ name: Todoist
 docs: https://docs.composio.dev/docs/todoist
 unique_key: todoist
 description: Todoist is a productivity app that helps manage tasks and projects.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/d9b539471e551d6c14ffd442d172e476edd44b33/todoist.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/ae836642de4cc4c43db390c60906427b93aab9ed/todoist.svg
 categories: [productivity, ticketing]
 
 auth_schemes:

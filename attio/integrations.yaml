@@ -2,7 +2,7 @@ name: Attio
 docs: https://docs.composio.dev/docs/attio
 unique_key: attio
 description: Attio is a fully customizable workspace for your team's relationships and workflows.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/d9b539471e551d6c14ffd442d172e476edd44b33/attio.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/attio.webp
 categories: [crm]
 
 auth_schemes:

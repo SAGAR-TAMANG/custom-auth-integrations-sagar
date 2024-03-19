@@ -1,7 +1,7 @@
 name: Monday
 unique_key: monday
 description: Monday is a cloud-based work operating system where teams create workflow apps in minutes to run their processes, projects, and everyday work.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/52a11a07f262d733441e3a7123eca5a101de58de/monday.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/monday.png
 categories: [productivity, ticketing]
 
 auth_schemes:

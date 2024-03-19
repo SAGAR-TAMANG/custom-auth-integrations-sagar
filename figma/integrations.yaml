@@ -2,7 +2,7 @@ name: figma
 unique_key: figma
 docs: https://www.figma.com/developers/api#auth
 description: A collaborative interface design tool.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/610cdc4aa8f9a9f9e8bc25dc67a88d30aa69b89b/figma.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/ae836642de4cc4c43db390c60906427b93aab9ed/figma.svg
 categories: [design, productivity]
 
 auth_schemes:
