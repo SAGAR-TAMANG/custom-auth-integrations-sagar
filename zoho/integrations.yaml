@@ -1,5 +1,5 @@
 name: zoho
-unique_key: zoho_oauth
+unique_key: zoho
 docs: "https://www.zoho.com/crm/developer/docs/api/v2/"
 description: "Zoho CRM's APIs allow you to perform all the operations that you do with our web client."
 logo: https://raw.githubusercontent.com/SamparkAI/open-logos/4abdd63a4a06c9d6f03c256bb4c6e77b266c0b35/zoho.svg
