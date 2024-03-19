@@ -2,7 +2,7 @@ name: zoho
 unique_key: zoho
 docs: "https://www.zoho.com/crm/developer/docs/api/v2/"
 description: "Zoho CRM's APIs allow you to perform all the operations that you do with our web client."
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/cf83c321580c7211988ca74e71f61a84f7c6af7c/zoho.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/zoho.png
 categories: [accounting]
 
 auth_schemes:
