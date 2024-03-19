@@ -2,7 +2,7 @@ name: klaviyo
 unique_key: klaviyo
 docs: https://docs.nango.dev/integrations/all/klaviyo
 description: A marketing platform for email, SMS, and more.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/ae836642de4cc4c43db390c60906427b93aab9ed/klaviyo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/cf83c321580c7211988ca74e71f61a84f7c6af7c/klaviyo.svg
 categories: [marketing]
 
 auth_schemes:

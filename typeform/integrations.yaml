@@ -1,7 +1,7 @@
 name: Typeform
 unique_key: typeform
 description: Typeform is an online software as a service (SaaS) company that specializes in online form building and online surveys.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/e320d8eeef9fa519afef913f6c4b272fc6391295/typeform.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/typeform.png
 categories: [surveys]
 
 auth_schemes:
