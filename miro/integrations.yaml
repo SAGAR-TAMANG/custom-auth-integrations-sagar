@@ -2,7 +2,7 @@ name: Miro
 docs: https://docs.composio.dev/docs/miro
 unique_key: miro
 description: Miro is a collaborative online whiteboard platform designed for remote and distributed teams.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/853011bff173624654a8f7b64b2399cf2d9e84b3/miro.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/b4507f0d4e6753d88243c997cbaab7fd6e2e6264/miro.svg
 categories: [design, productivity]
 
 auth_schemes:
