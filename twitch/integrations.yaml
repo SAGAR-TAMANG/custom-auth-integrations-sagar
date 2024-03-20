@@ -16,10 +16,8 @@ auth_schemes:
       grant_type: "authorization_code"
     authorization_params:
       response_type: "code"
-      force_verify: false
     proxy:
       base_url: "{{base_url}}"
-      state: "secure_random"
     fields:
       - name: base_url
         displayName: Base URL
