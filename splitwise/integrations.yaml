@@ -1,7 +1,7 @@
 name: splitwise
 unique_key: splitwise
 description: Splitwise helps you split bills and expenses with friends and family.
-logo: https://logo.clearbit.com/splitwise.com
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/177a8a6895428a543263858b976295614331d16b/splitwise.svg
 categories: [payment, social]
 
 auth_schemes:
