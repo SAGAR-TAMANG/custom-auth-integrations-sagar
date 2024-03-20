@@ -1,5 +1,5 @@
-name: twitch
-unique_key: twitch_oauth
+name: Twitch
+unique_key: twitch
 docs: https://dev.twitch.tv/docs
 description: Twitch is a live streaming platform focused on video gaming, esports, and creative content.
 logo: https://logo.clearbit.com/twitch.tv
