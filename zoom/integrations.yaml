@@ -1,0 +1,25 @@
+name: zoom
+unique_key: zoom
+docs: https://marketplace.zoom.us/docs/guides/auth/oauth
+description: Zoom is a remote conferencing services company that combines video conferencing, online meetings, chat, and mobile collaboration.
+logo: https://assets.brandfolder.com/pl546j-7le8mk-6g8yig/original/zoom-logo.png
+categories: [video]
+
+auth_schemes:
+  - scheme_name: OAUTH2
+    auth_mode: OAUTH2
+    authorization_url: "https://zoom.us/oauth/authorize"
+    token_url: "https://zoom.us/oauth/token"
+    default_scopes: ["calendar:read:admin"]
+    token_params:
+      grant_type: authorization_code
+    authorization_params:
+      response_type: code
+    proxy:
+      base_url: "{{base_url}}"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "Zoom API base URL"
+        type: string
+        default: "https://developer.zoom.us"
