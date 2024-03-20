@@ -1,0 +1,27 @@
+name: survey-monkey
+unique_key: survey-monkey
+docs: https://developer.surveymonkey.com/api/v3/
+description: SurveyMonkey is an online survey software that helps with creating and running surveys online.
+logo: https://logo.clearbit.com/surveymonkey.com
+categories: [surveys]
+
+auth_schemes:
+  - scheme_name: OAuth2
+    auth_mode: OAUTH2
+    authorization_url: "https://api.surveymonkey.com/oauth/authorize"
+    token_url: "https://api.surveymonkey.com/oauth/token"
+    default_scopes: ["roles_read users_read"]
+    token_response_metadata: ["access_token", "token_type", "expires_in", "refresh_token", "scope"]
+    token_params:
+      grant_type: "authorization_code"
+    authorization_params:
+      response_type: "code"
+    proxy:
+      base_url: "{{base_url}}"
+      state: "secure_random"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "Base URL for SurveyMonkey API requests."
+        type: string
+        default: "https://api.surveymonkey.com"
