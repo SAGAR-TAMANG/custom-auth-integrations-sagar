@@ -6,14 +6,23 @@ logo: https://logo.clearbit.com/convertkit.com
 categories: [Email Marketing, Automation]
 
 auth_schemes:
-  - scheme_name: API_SECRET
+  - scheme_name: convertkit_api_key
     auth_mode: API_KEY
+    proxy:
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "{{apiSecret}}"
     fields:
       - name: apiSecret
-        expected_from_customer: true
+        expected_from_customer: true 
         displayName: API Secret
-        description: "Your ConvertKit API secret for authenticating requests."
+        description: "Your ConvertKit API secret for authentication."
         type: string
         required: true
-        secret: true
-
+      - name: base_url
+        expected_from_customer: true 
+        displayName: Base URL
+        description: "The base URL for ConvertKit API requests."
+        type: string
+        required: false
+        default: https://api.convertkit.com/v3/
