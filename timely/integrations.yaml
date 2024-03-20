@@ -19,7 +19,6 @@ auth_schemes:
       response_type: "code"
     proxy:
       base_url: "{{base_url}}"
-      state: "secure_random"
     fields:
       - name: base_url
         displayName: Base URL
