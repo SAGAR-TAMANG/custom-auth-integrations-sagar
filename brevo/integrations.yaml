@@ -1,0 +1,28 @@
+name: Brevo
+unique_key: brevo
+docs: https://developers.brevo.com/docs/getting-started
+description: Email marketing service enabling users to send email campaigns, newsletters, and manage contacts.
+logo: https://corp-backend.brevo.com/wp-content/uploads/2023/04/Brevo-Logo-1.svg
+categories: [Email Marketing, Campaign Management]
+
+auth_schemes:
+  - scheme_name: brevo_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "{{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true 
+        displayName: API Key
+        description: "Your Brevo API key for authentication. Obtain it from your Brevo settings."
+        type: string
+        required: true
+      - name: base_url
+        expected_from_customer: true 
+        displayName: Base URL
+        description: "The base URL for Brevo API requests. For more information, visit https://developers.brevo.com/docs/api"
+        type: string
+        required: false
+        default: https://api.brevo.com/v3
