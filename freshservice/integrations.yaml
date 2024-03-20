@@ -2,7 +2,7 @@ name: Freshservice
 unique_key: freshservice
 docs: https://api.freshservice.com/
 description: Freshservice is an online ITSM service desk with a fresh twist, providing automated IT service management and customer service.
-logo: https://assets.freshservice.com/assets/favicon-feather-4f8d9e4e8555c5866745dbb44890eea5.ico
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/b4004c3cf37400245bbd8ef3649c562d653f36e7/freshservice.svg
 categories: [support]
 
 auth_schemes:
