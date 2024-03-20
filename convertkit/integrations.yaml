@@ -10,8 +10,10 @@ auth_schemes:
     auth_mode: API_KEY
     fields:
       - name: apiSecret
+        expected_from_customer: true
         displayName: API Secret
         description: "Your ConvertKit API secret for authenticating requests."
         type: string
         required: true
         secret: true
+
