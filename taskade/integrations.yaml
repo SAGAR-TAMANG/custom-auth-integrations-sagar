@@ -2,7 +2,7 @@ name: Taskade
 unique_key: taskade
 docs: https://developers.taskade.com/docs/start/authentication
 description: Taskade is a tool for team collaboration and task management with support for real-time updates, nested task lists, and more.
-logo: [Taskade Logo URL Placeholder]
+logo: 
 categories: [Productivity, Collaboration, Task Management]
 
 auth_schemes:
@@ -18,7 +18,6 @@ auth_schemes:
       response_type: code
     proxy:
       base_url: "{{base_url}}"
-      state: "state_value"
     fields:
       - name: base_url
         displayName: Base URL
