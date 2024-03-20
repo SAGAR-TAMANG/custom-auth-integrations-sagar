@@ -1,7 +1,7 @@
 name: freshdesk
 unique_key: freshdesk
 description: A customer support platform that provides helpdesk support with all smart automations to get things done faster.
-logo: <link_to_app_logo>
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/3ab9e1b09920fb6e04970071ee2894ac4f665e43/freshdesk.svg
 categories: [support]
 
 auth_schemes:
