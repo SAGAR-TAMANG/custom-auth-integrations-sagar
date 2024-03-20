@@ -1,4 +1,4 @@
-name: survey-monkey
+name: Survey Monkey
 unique_key: survey-monkey
 docs: https://developer.surveymonkey.com/api/v3/
 description: SurveyMonkey is an online survey software that helps with creating and running surveys online.
@@ -18,7 +18,6 @@ auth_schemes:
       response_type: "code"
     proxy:
       base_url: "{{base_url}}"
-      state: "secure_random"
     fields:
       - name: base_url
         displayName: Base URL
