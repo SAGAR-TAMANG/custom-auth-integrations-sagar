@@ -6,7 +6,7 @@ logo: https://assets.brandfolder.com/pl546j-7le8mk-6g8yig/original/zoom-logo.png
 categories: [video]
 
 auth_schemes:
-  - scheme_name: OAUTH2
+  - scheme_name: zoom_oauth2
     auth_mode: OAUTH2
     authorization_url: "https://zoom.us/oauth/authorize"
     token_url: "https://zoom.us/oauth/token"
