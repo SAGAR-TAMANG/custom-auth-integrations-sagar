@@ -1,0 +1,26 @@
+name: Bitly
+unique_key: bitly
+docs: https://dev.bitly.com/docs/getting-started/authentication/
+description: Bitly is a link management platform that helps users shorten, create, and manage URLs.
+logo: https://logo.clearbit.com/bitly.com
+categories: [URL Shortening, Link Management]
+
+auth_schemes:
+  - scheme_name: oauth2
+    auth_mode: OAUTH2
+    authorization_url: "https://bitly.com/oauth/authorize"
+    token_url: "https://api-ssl.bitly.com/oauth/access_token"
+    default_scopes: []
+    token_response_metadata: ["access_token", "login"]
+    token_params:
+      grant_type: authorization_code
+    authorization_params:
+      response_type: code
+    proxy:
+      base_url: "{{base_url}}"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "Base URL for API requests."
+        type: string
+        default: "https://api-ssl.bitly.com"
