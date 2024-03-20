@@ -20,9 +20,7 @@ auth_schemes:
         type: string
         required: true
       - name: base_url
-        expected_from_customer: true 
         displayName: Base URL
         description: "The base URL for ConvertKit API requests."
         type: string
-        required: false
         default: https://api.convertkit.com/v3/
