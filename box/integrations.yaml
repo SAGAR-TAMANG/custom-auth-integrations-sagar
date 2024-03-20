@@ -22,4 +22,4 @@ auth_schemes:
         displayName: Base URL
         description: "Base URL for API requests"
         type: string
-        default: "https://api.box.com"
+        default: "https://app.box.com"
