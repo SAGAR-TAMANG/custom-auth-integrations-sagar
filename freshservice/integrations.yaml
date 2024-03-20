@@ -1,0 +1,23 @@
+name: Freshservice
+unique_key: freshservice
+docs: https://api.freshservice.com/
+description: Freshservice is an online ITSM service desk with a fresh twist, providing automated IT service management and customer service.
+logo: https://assets.freshservice.com/assets/favicon-feather-4f8d9e4e8555c5866745dbb44890eea5.ico
+categories: [support]
+
+auth_schemes:
+  - scheme_name: Freshservice Basic Auth
+    auth_mode: BASIC
+    proxy:
+      base_url: "{{base_url}}"
+    fields:
+      - name: subdomain
+        displayName: Subdomain
+        description: "Your Freshservice account subdomain."
+        type: string
+        default: "<your_subdomain>"
+      - name: api_key
+        displayName: API Key
+        description: "Your Freshservice API key."
+        type: string
+        default: "<your_api_key>"
