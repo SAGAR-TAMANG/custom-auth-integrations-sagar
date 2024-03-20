@@ -10,7 +10,6 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: "https://api.timelyapp.com/1.1/oauth/authorize"
     token_url: "https://api.timelyapp.com/1.1/oauth/token"
-    default_scopes: ["read write"]
     token_response_metadata: ["access_token", "token_type", "expires_in", "refresh_token", "scope"]
     disable_pkce: true
     token_params:
