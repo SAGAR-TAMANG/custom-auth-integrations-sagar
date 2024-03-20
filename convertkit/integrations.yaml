@@ -1,0 +1,17 @@
+name: ConvertKit
+unique_key: convertkit
+docs: https://developers.convertkit.com
+description: ConvertKit offers email marketing software for creators that allows them to share their work and grow their audience.
+logo: https://logo.clearbit.com/convertkit.com
+categories: [Email Marketing, Automation]
+
+auth_schemes:
+  - scheme_name: API_SECRET
+    auth_mode: API_KEY
+    fields:
+      - name: apiSecret
+        displayName: API Secret
+        description: "Your ConvertKit API secret for authenticating requests."
+        type: string
+        required: true
+        secret: true
