@@ -2,7 +2,7 @@ name: bitbucket
 unique_key: bitbucket
 
 description: Bitbucket is a Git-based source code repository hosting service owned by Atlassian.
-logo: https://wac-cdn.atlassian.com/dam/jcr:0a9e6c5c-6c1e-4eb6-8f06-9e4b1b55a54a/Bitbucket%20icon-gradient-blue.svg?cdnVersion=1443
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/c776dbf1cd2b4f79cab0a1feafe5045b92e12ca9/bitbucket.svg
 categories: [dev-tools]
 
 auth_schemes:
@@ -17,7 +17,7 @@ auth_schemes:
       response_type: code
     proxy:
       base_url: "{{base_url}}"
-      state: "REQUIRED"
+      #state removed
     fields:
       - name: base_url
         displayName: Base URL
