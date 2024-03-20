@@ -1,0 +1,26 @@
+name: splitwise
+unique_key: splitwise
+description: Splitwise helps you split bills and expenses with friends and family.
+logo: https://logo.clearbit.com/splitwise.com
+categories: [payment, social]
+
+auth_schemes:
+  - scheme_name: splitwise_oauth2
+    auth_mode: OAUTH2
+    authorization_url: "https://secure.splitwise.com/oauth/authorize"
+    token_url: "https://secure.splitwise.com/oauth/token"
+    default_scopes: []
+    token_response_metadata: []
+    token_params:
+      grant_type: authorization_code
+    authorization_params:
+      response_type: code
+    proxy:
+      base_url: "{{base_url}}"
+      state: "splitwise_state"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "Base URL for Splitwise API."
+        type: string
+        default: "https://secure.splitwise.com"
