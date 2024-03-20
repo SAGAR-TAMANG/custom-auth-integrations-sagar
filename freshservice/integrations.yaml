@@ -6,8 +6,8 @@ logo: https://assets.freshservice.com/assets/favicon-feather-4f8d9e4e8555c586674
 categories: [support]
 
 auth_schemes:
-  - scheme_name: Freshservice Basic Auth
-    auth_mode: BASIC
+  - scheme_name: Freshservice API Key Auth
+    auth_mode: API_KEY
     proxy:
       base_url: "{{base_url}}"
     fields:
@@ -15,9 +15,9 @@ auth_schemes:
         displayName: Subdomain
         description: "Your Freshservice account subdomain."
         type: string
-        default: "<your_subdomain>"
+        default: "composiohelpdesk"
       - name: api_key
         displayName: API Key
         description: "Your Freshservice API key."
         type: string
-        default: "<your_api_key>"
+        default: 01iMEhrJajEaWlB33ai
