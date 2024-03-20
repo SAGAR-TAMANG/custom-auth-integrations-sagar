@@ -1,0 +1,26 @@
+name: bitbucket
+unique_key: bitbucket
+
+description: Bitbucket is a Git-based source code repository hosting service owned by Atlassian.
+logo: https://wac-cdn.atlassian.com/dam/jcr:0a9e6c5c-6c1e-4eb6-8f06-9e4b1b55a54a/Bitbucket%20icon-gradient-blue.svg?cdnVersion=1443
+categories: [dev-tools]
+
+auth_schemes:
+  - scheme_name: OAuth2
+    auth_mode: OAUTH2
+    authorization_url: "https://bitbucket.org/site/oauth2/authorize"
+    token_url: "https://bitbucket.org/site/oauth2/access_token"
+
+    token_params:
+      grant_type: authorization_code
+    authorization_params:
+      response_type: code
+    proxy:
+      base_url: "{{base_url}}"
+      state: "REQUIRED"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for the Bitbucket API."
+        type: string
+        default: "https://api.bitbucket.org"
