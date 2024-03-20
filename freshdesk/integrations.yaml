@@ -5,12 +5,17 @@ logo: https://raw.githubusercontent.com/SamparkAI/open-logos/3ab9e1b09920fb6e049
 categories: [support]
 
 auth_schemes:
-  - scheme_name: BASIC
-    auth_mode: BASIC
+  - scheme_name: API_KEY
+    auth_mode: API_KEY
     proxy:
       base_url: "https://{{base_url}}.freshdesk.com"
       state: "composio"
     fields:
+      - name: api_key
+        displayName: API Key
+        description: "Your Freshdesk API key for authentication."
+        type: string
+        default: "<your_api_key>"
       - name: subdomain
         displayName: Subdomain
         description: "The subdomain of your Freshdesk account."
