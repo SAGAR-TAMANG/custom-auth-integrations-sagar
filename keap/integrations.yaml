@@ -2,7 +2,7 @@ name: keap
 unique_key: keap
 docs: https://developer.infusionsoft.com/documentation/
 description: Keap helps you grow your business, improve customer service & increase sales.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/ac2f87211610ed451a66458de2695e5dc7878ed3/keap.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/1156ff37cfc031515e44e4360620799fc20b0ca0/keap.svg
 categories: [marketing]
 
 auth_schemes:
