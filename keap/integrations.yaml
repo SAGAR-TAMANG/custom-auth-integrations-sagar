@@ -1,0 +1,27 @@
+name: keap
+unique_key: keap
+docs: https://developer.infusionsoft.com/documentation/
+description: Keap helps you grow your business, improve customer service & increase sales.
+logo: https://logo-url-here
+categories: [marketing]
+
+auth_schemes:
+  - scheme_name: OAUTH2
+    auth_mode: OAUTH2
+    authorization_url: "https://accounts.infusionsoft.com/app/oauth/authorize"
+    token_url: "https://api.infusionsoft.com/token"
+    default_scopes: []
+    token_response_metadata: []
+    token_params:
+      grant_type: authorization_code
+    authorization_params:
+      response_type: code
+    proxy:
+      base_url: "{{base_url}}"
+      state: "required"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "Base URL for Keap API"
+        type: string
+        default: "https://api.infusionsoft.com"
