@@ -1,0 +1,27 @@
+name: Harvest
+docs: https://help.getharvest.com/api-v2/
+unique_key: harvest
+description: Harvest makes it easy to track time across all your projects and turn that data into reporting or invoices.
+logo: "https://res.cloudinary.com/spiralyze/image/upload/v1694511012/Harvest/1047/icon-time_1.svg"
+categories: [Time Tracking, Scheduling, CRM]
+
+auth_schemes:
+  - scheme_name: harvest_oauth
+    auth_mode: OAuth2
+    authorization_url: "https://id.getharvest.com/oauth2/authorize"
+    token_url: "https://id.getharvest.com/api/v2/oauth2/token"
+    default_scopes: ["harvest:read", "harvest:write"]
+    scope_separator: ','
+    token_response_metadata: ["access_token", "token_type", "scope", "expires_in", "refresh_token"]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
+    proxy:
+      base_url: "{{base_url}}" 
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Harvest API requests. For more information, visit https://help.getharvest.com/api-v2/"
+        type: string
+        default: "https://api.harvestapp.com/v2" 
