@@ -7,16 +7,15 @@ categories: [Time Tracking, Scheduling, CRM]
 
 auth_schemes:
   - scheme_name: harvest_oauth
-    auth_mode: OAuth2
+    auth_mode: OAUTH2
     authorization_url: "https://id.getharvest.com/oauth2/authorize"
     token_url: "https://id.getharvest.com/api/v2/oauth2/token"
     default_scopes: ["harvest:read", "harvest:write"]
     scope_separator: ','
-    token_response_metadata: ["access_token", "token_type", "scope", "expires_in", "refresh_token"]
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     authorization_params:
-        response_type: "code"
-    token_params:
-        grant_type: "authorization_code"
+        response_type: code
+        owner: user
     proxy:
       base_url: "{{base_url}}" 
     fields:
