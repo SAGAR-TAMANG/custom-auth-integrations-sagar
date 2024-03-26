@@ -2,7 +2,7 @@ name: Amazon
 docs: https://developer.amazon.com/docs/app-submission-api/auth.html
 unique_key: amazon
 description:  Amazon is an American multinational technology company, engaged in e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.
-logo: "https://d1zx4fn8ox8446.cloudfront.net/filemanager.rboxfile/e3ce5c4f72784de2a87df58154b3f146/accelo_logo_white-250px.png"
+logo: "https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/Amazon-512.png"
 categories: [ECommerce, Shopping]
 
 auth_schemes:
@@ -24,4 +24,4 @@ auth_schemes:
         displayName: Base URL
         description: "The base URL for Amazon API requests. For more information, visit https://developer.amazon.com/docs/app-submission-api/auth.html"
         type: string
-        default: "https://composio-dev.api.accelo.com/api/v0"
+        default: "https://api.amazon.com"
