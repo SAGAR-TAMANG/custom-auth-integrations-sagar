@@ -10,7 +10,7 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: "https://composio-dev.api.accelo.com/oauth2/v0/authorize"
     token_url: "https://composio-dev.api.accelo.com/oauth2/v0/token"
-    default_scopes: []
+    default_scopes: ["read(all)"]
     scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     authorization_params:
