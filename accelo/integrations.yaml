@@ -8,8 +8,8 @@ categories: [Time Tracking, CRM]
 auth_schemes:
   - scheme_name: accelo_oauth
     auth_mode: OAUTH2
-    authorization_url: "https://Composio.api.accelo.com/oauth2/v0/authorize"
-    token_url: "https://Composio.api.accelo.com/oauth2/v0/token"
+    authorization_url: "https://composio-dev.api.accelo.com/oauth2/v0/authorize"
+    token_url: "https://composio-dev.api.accelo.com/oauth2/v0/token"
     default_scopes: ["accelo:read", "accelo:write"]
     scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
