@@ -24,4 +24,4 @@ auth_schemes:
         displayName: Base URL
         description: "The base URL for Accelo API requests. For more information, visit https://api.accelo.com/docs/"
         type: string
-        default: "https://composio.api.accelo.com/api/v0"
+        default: "https://composio-dev.api.accelo.com/api/v0"
