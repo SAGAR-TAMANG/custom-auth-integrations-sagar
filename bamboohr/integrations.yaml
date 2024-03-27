@@ -1,0 +1,26 @@
+name: BambooHR
+unique_key: bamboohr
+docs: https://documentation.bamboohr.com/docs/getting-started
+description: BambooHR is an American technology company that provides human resources software as a service. 
+logo: https://www.bamboohr.com/images/about/media-assets/b-logo-green.png
+categories: [ERP, CRM]
+
+auth_schemes:
+  - scheme_name: bamboohr_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "{{apiSecret}}"
+    fields:
+      - name: apiSecret
+        expected_from_customer: true 
+        displayName: API Secret
+        description: "Your Amplitude API secret for authentication."
+        type: string
+        required: true
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Amplitude API requests."
+        type: string
+        default: https://composio.bamboohr.com
