@@ -1,26 +1,27 @@
-name: BambooHR
-unique_key: bamboohr
-docs: https://documentation.bamboohr.com/docs/getting-started
-description: BambooHR is an American technology company that provides human resources software as a service. 
-logo: https://www.bamboohr.com/images/about/media-assets/b-logo-green.png
-categories: [ERP, CRM]
+name: Battle.net
+unique_key: battlenet
+docs: https://develop.battle.net/documentation/guides/using-oauth
+description: Battle.net is an Internet-based online game, social networking service, digital distribution, and digital rights management platform developed by Blizzard Entertainment. 
+logo: https://play-lh.googleusercontent.com/PuPFgmLam2WNyul3lUQywQT5Y5sPgL6VzWSUAdXOS1oIQwHYnrB_MyfXCOrR4LzZcjeP
+categories: [digital, game, internet]
 
 auth_schemes:
-  - scheme_name: bamboohr_api_key
-    auth_mode: API_KEY
+  - scheme_name: battlenet_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://oauth.battle.net/authorize"
+    token_url: "https://oauth.battle.net/token"
+    # default_scopes: ["appstore::apps:readwrite"]
+    # scope_separator: ','
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
     proxy:
-      base_url: "{{base_url}}"
-      headers:
-        Authorization: "{{apiSecret}}"
+      base_url: "{{base_url}}" 
     fields:
-      - name: apiSecret
-        expected_from_customer: true 
-        displayName: API Secret
-        description: "Your Amplitude API secret for authentication."
-        type: string
-        required: true
       - name: base_url
         displayName: Base URL
-        description: "The base URL for Amplitude API requests."
+        description: "The base URL for Battle.net API requests. For more information, visit https://develop.battle.net/documentation/guides/using-oauth"
         type: string
-        default: https://composio.bamboohr.com
+        default: "https://oauth.battle.net/"
