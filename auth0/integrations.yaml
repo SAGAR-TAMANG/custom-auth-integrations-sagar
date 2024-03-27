@@ -1,0 +1,27 @@
+name: Auth0
+docs: https://auth0.com/docs/api
+unique_key: auth0
+description: Auth0 is a platform that allows developers and companies to verify a user's identity before giving them access to applications and websites.
+logo: "https://images.ctfassets.net/23aumh6u8s0i/CeWg5QjqPrIJzZddb2fG9/9d98f8f518ce1335d3f531b3841c7297/auth0_by_okta_hero.png"
+categories: [Authentication, Auth]
+
+auth_schemes:
+  - scheme_name: auth0_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://composio.us.auth0.com/api/v2/clients/"
+    token_url: "https://composio.us.auth0.com/api/v2/clients/"
+    # default_scopes: ["read(all)"]
+    # scope_separator: ','
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
+    proxy:
+      base_url: "{{base_url}}" 
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Auth0 API requests. For more information, visit https://auth0.com/docs/api"
+        type: string
+        default: "https://composio.us.auth0.com"
