@@ -8,8 +8,8 @@ categories: [Authentication, Auth]
 auth_schemes:
   - scheme_name: auth0_oauth
     auth_mode: OAUTH2
-    authorization_url: "https://composio.us.auth0.com/api/v2/clients/"
-    token_url: "https://composio.us.auth0.com/api/v2/clients/"
+    authorization_url: "https://composio.us.auth0.com/api/v2/"
+    token_url: "https://composio.us.auth0.com/api/v2/"
     # default_scopes: ["read(all)"]
     # scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
