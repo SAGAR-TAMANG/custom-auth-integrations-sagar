@@ -1,0 +1,27 @@
+name: Boldsign
+unique_key: boldsign
+docs: https://developers.boldsign.com/authentication/api-key/?region=us
+description: BoldSign is an easy-to-use and secure electronic signature solution. With BoldSign you can quickly complete your contracts, accept offers, sign NDAs, approve invoices, confirm service appointments, onboard new employees, and more with just few clicks.
+logo: https://cdn.knoji.com/images/logo/boldsign.jpg
+categories: [signature, digital]
+
+auth_schemes:
+  - scheme_name: blackbaud_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://account.boldsign.com/connect/authorize"
+    token_url: "https://account.boldsign.com/connect/token"
+    # default_scopes: ["appstore::apps:readwrite"]
+    # scope_separator: ','
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
+    proxy:
+      base_url: "{{base_url}}" 
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Boldsign API requests. For more information, visit https://developers.boldsign.com/authentication/api-key/?region=us"
+        type: string
+        default: "https://app.blackbaud.com/"
