@@ -8,7 +8,7 @@ categories: [ECommerce, Shopping]
 auth_schemes:
   - scheme_name: amazon_oauth
     auth_mode: OAUTH2
-    authorization_url: "https://api.amazon.com/auth/o2/authorize"
+    authorization_url: "https://www.amazon.com/ap/oa"
     token_url: "https://api.amazon.com/auth/o2/token"
     default_scopes: ["appstore::apps:readwrite"]
     scope_separator: ','
