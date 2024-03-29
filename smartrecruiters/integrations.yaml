@@ -12,6 +12,7 @@ auth_schemes:
     token_url: "https://4d5d24-da.myshopify.com/admin/oauth/access_token"
     # default_scopes: ["appstore::apps:readwrite"]
     # scope_separator: ','
+    callback_url: https://backend.composio.dev/api/v1/auth-apps/add
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     authorization_params:
         response_type: "code"

@@ -10,6 +10,7 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: "https://oauth.battle.net/authorize"
     token_url: "https://oauth.battle.net/token"
+    callback_url: https://backend.composio.dev/api/v1/auth-apps/add
     # default_scopes: ["appstore::apps:readwrite"]
     # scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
