@@ -2,7 +2,7 @@ name: Braintree
 unique_key: braintree
 docs: https://graphql.braintreepayments.com/guides/making_api_calls/#using-graphiql
 description: Braintree is a Chicago-based company that primarily deals in mobile and web payment systems for e-commerce companies.
-logo: https://cdn.knoji.com/images/logo/boldsign.jpg
+logo: https://cufinder.io/_next/image?url=https%3A%2F%2Fcufinder.io%2Fimages%2Fmarketing-logos%2Fbraintreepayments.com.png&w=1200&q=75
 categories: [signature, digital]
 
 auth_schemes:
