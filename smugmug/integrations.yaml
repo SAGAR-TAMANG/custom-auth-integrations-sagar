@@ -1,0 +1,26 @@
+name: Smugmug
+unique_key: smugmug
+docs: https://api.smugmug.com/api/v2/doc/tutorial/
+description: SmugMug is a paid image sharing, image hosting service, and online video platform on which users can upload photos and videos. 
+logo: https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_8c06f55c9fbf95588fd6dc073a818345/smugmug.png
+categories: [Scheduling]
+
+auth_schemes:
+  - scheme_name: smugmug_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "{{apiSecret}}"
+    fields:
+      - name: apiSecret
+        expected_from_customer: true 
+        displayName: API Secret
+        description: "Your Smugmug API secret for authentication."
+        type: string
+        required: true
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Smugmug API requests."
+        type: string
+        default: https://api.smugmug.com/services/oauth/1.0a/
