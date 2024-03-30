@@ -2,7 +2,7 @@ name: Shortcut
 unique_key: shortcut
 docs: https://help.shortcut.com/hc/en-us/articles/205701199-Shortcut-API-Tokens
 description: Shortcut aligns product development work with company objectives so teams can execute with a shared purpose.
-logo: https://assets-global.website-files.com/6372338e5477e047032b37a5/64f5ebb80c42dde19221fb7f_Default%20Symbol.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/shortcut.svg
 categories: [Scheduling]
 
 auth_schemes:

@@ -2,7 +2,7 @@ name: Smugmug
 unique_key: smugmug
 docs: https://api.smugmug.com/api/v2/doc/tutorial/
 description: SmugMug is a paid image sharing, image hosting service, and online video platform on which users can upload photos and videos. 
-logo: https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_8c06f55c9fbf95588fd6dc073a818345/smugmug.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/smugmug.svg
 categories: [Scheduling]
 
 auth_schemes:

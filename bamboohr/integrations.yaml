@@ -2,7 +2,7 @@ name: Blackbaud
 unique_key: blackbaud
 docs: https://developer.blackbaud.com/skyapi/docs/authorization
 description: Blackbaud, Inc. is a cloud computing provider that serves the social good community—nonprofits, foundations, corporations, education institutions, healthcare organizations, religious organizations, and individual change agents.
-logo: https://cdn-payscale.com/content/logos/Blackbaud-Inc.SOURCE.crunchbase.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/bamboohr.svg
 categories: [cloud, computing, social]
 
 auth_schemes:

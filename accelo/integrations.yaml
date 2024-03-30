@@ -2,7 +2,7 @@ name: Accelo
 docs: https://api.accelo.com/docs/#authentication
 unique_key: accelo
 description: A system to boost productivity and profitability across your service business.
-logo: "https://d1zx4fn8ox8446.cloudfront.net/filemanager.rboxfile/e3ce5c4f72784de2a87df58154b3f146/accelo_logo_white-250px.png"
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/accelo.svg
 categories: [Time Tracking, CRM]
 
 auth_schemes:

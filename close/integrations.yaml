@@ -2,7 +2,7 @@ name: Close
 unique_key: close
 docs: https://developer.close.com/
 description: Close is a sales productivity platform fine-tuned to help SMBs turn more leads into revenue
-logo: https://pbs.twimg.com/profile_images/497905627948015616/vNCOkr1Z_400x400.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/close.svg
 categories: [CRM]
 
 auth_schemes:
