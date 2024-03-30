@@ -1,0 +1,28 @@
+name: Wakatime
+unique_key: wakatime
+docs: https://wakatime.com/developers#authentication
+description: WakaTime is a personal analytics service for programmers that shows you how you spend your time and helps you be more productive.
+logo: https://cdn.worldvectorlogo.com/logos/wakatime.svg
+categories: []
+
+auth_schemes:
+  - scheme_name: wakatime_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://wakatime.com/oauth/authorize"
+    token_url: "https://wakatime.com/oauth/token"
+    callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+    # default_scopes: ["appstore::apps:readwrite"]
+    # scope_separator: ','
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
+    proxy:
+      base_url: "{{base_url}}" 
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Wakatime API requests. For more information, visit https://wakatime.com/developers#authentication"
+        type: string
+        default: "https://api.wakatime.com/api/v1/"
