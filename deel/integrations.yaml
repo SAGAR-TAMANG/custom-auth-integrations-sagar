@@ -1,0 +1,28 @@
+name: Deel
+docs: https://developer.deel.com/docs/getting-started-1
+unique_key: deel
+description:  Deel is the all-in-one HR platform for global teams. It helps companies simplify every aspect of managing an international workforce, from culture and onboarding, to local payroll and compliance.
+logo: https://pbs.twimg.com/profile_images/1762074302667538432/2GuQc48R_400x400.jpg
+categories: [CRM, ERP]
+
+auth_schemes:
+  - scheme_name: deel_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://app.deel.com/oauth2/authorize"
+    token_url: "https://auth.letsdeel.com/oauth2/tokens"
+    callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+    # default_scopes: [""]
+    # scope_separator: ','
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
+    proxy:
+      base_url: "{{base_url}}" 
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Deel API requests. For more information, visit https://developer.deel.com/docs/getting-started-1"
+        type: string
+        default: "https://api.letsdeel.com/"
