@@ -2,8 +2,8 @@ name: Square
 docs: https://developer.squareup.com/docs/oauth-api/
 unique_key: square
 description: Square is a comprehensive commerce platform that offers tools for payment processing, point-of-sale, and online store management.
-logo: "https://example.com/square_logo.png"
-categories: [Payment Processing, ECommerce]
+logo: https://xms-production-f.squarecdn.com/xms/assets/public-web-styles/social/default-56f973ec4d9cb2927e20a0cb97201783e27bf352585fa25cddbde11aa81635a7.jpg
+categories: [Payments, CRM]
 
 auth_schemes:
   - scheme_name: square_oauth
