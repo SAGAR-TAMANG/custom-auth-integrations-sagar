@@ -3,6 +3,7 @@ unique_key: battlenet
 docs: https://develop.battle.net/documentation/guides/using-oauth
 description: Battle.net is an Internet-based online game, social networking service, digital distribution, and digital rights management platform developed by Blizzard Entertainment. 
 logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/blackbaud.svg
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [digital, game, internet]
 
 auth_schemes:
@@ -10,7 +11,6 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: "https://oauth.battle.net/authorize"
     token_url: "https://oauth.battle.net/token"
-    callback_url: https://backend.composio.dev/api/v1/auth-apps/add
     # default_scopes: ["appstore::apps:readwrite"]
     # scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]

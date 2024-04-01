@@ -3,6 +3,7 @@ unique_key: smugmug
 docs: https://api.smugmug.com/api/v2/doc/tutorial/
 description: SmugMug is a paid image sharing, image hosting service, and online video platform on which users can upload photos and videos. 
 logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/smugmug.svg
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [Scheduling]
 
 auth_schemes:
@@ -12,7 +13,6 @@ auth_schemes:
       base_url: "{{base_url}}"
       headers:
         Authorization: "{{apiSecret}}"
-    callback_url: https://backend.composio.dev/api/v1/auth-apps/add
     fields:
       - name: apiSecret
         expected_from_customer: true 

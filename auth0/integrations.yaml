@@ -3,6 +3,7 @@ docs: https://auth0.com/docs/api
 unique_key: auth0
 description: Auth0 is a platform that allows developers and companies to verify a user's identity before giving them access to applications and websites.
 logo: "https://images.ctfassets.net/23aumh6u8s0i/CeWg5QjqPrIJzZddb2fG9/9d98f8f518ce1335d3f531b3841c7297/auth0_by_okta_hero.png"
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [Authentication, Auth]
 
 auth_schemes:
@@ -10,7 +11,6 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: "https://composio.us.auth0.com/api/v2/"
     token_url: "https://composio.us.auth0.com/api/v2/"
-    callback_url: https://backend.composio.dev/api/v1/auth-apps/add
     # default_scopes: ["read(all)"]
     # scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]

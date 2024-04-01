@@ -3,6 +3,7 @@ docs: https://help.getharvest.com/api-v2/
 unique_key: harvest
 description: Harvest makes it easy to track time across all your projects and turn that data into reporting or invoices.
 logo: "https://res.cloudinary.com/spiralyze/image/upload/v1694511012/Harvest/1047/icon-time_1.svg"
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [Time Tracking, Scheduling, CRM]
 
 auth_schemes:
@@ -10,7 +11,6 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: "https://id.getharvest.com/oauth2/authorize"
     token_url: "https://id.getharvest.com/api/v2/oauth2/token"
-    callback_url: https://backend.composio.dev/api/v1/auth-apps/add
     default_scopes: ["harvest:read", "harvest:write"]
     scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]

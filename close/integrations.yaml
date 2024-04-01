@@ -3,6 +3,7 @@ unique_key: close
 docs: https://developer.close.com/
 description: Close is a sales productivity platform fine-tuned to help SMBs turn more leads into revenue
 logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/close.svg
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [CRM]
 
 auth_schemes:
@@ -12,7 +13,6 @@ auth_schemes:
       base_url: "{{base_url}}"
       headers:
         Authorization: "{{apiSecret}}"
-    callback_url: https://backend.composio.dev/api/v1/auth-apps/add
     fields:
       - name: apiSecret
         expected_from_customer: true 
