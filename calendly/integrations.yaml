@@ -3,7 +3,7 @@ unique_key: calendly
 docs: https://developer.calendly.com/api-docs/
 description: Calendly is a cloud-based scheduling tool that helps people find meeting times for appointments, interviews, demos, and calls.
 logo: https://brandfetch.com/calendly-embed.com?library=default&collection=logos&asset=idr8msR3r4&view=overview
-categories: ["Software", "Scheduling and Appointment Management Software"]
+categories: ["Software"]
 
 auth schemes:
 // OAuth2 
@@ -11,8 +11,6 @@ auth schemes:
 		auth_mode: OAUTH2
 		authorization_url: https://auth.calendly.com/oauth/authorize
     token_url: https://auth.calendly.com/oauth/token
-    default_scopes: [""]
-    scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     authorization_params:
         response_type: code
