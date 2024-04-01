@@ -25,4 +25,4 @@ auth_schemes:
         displayName: Base URL
         description: "The base URL for Boldsign API requests. For more information, visit https://developers.boldsign.com/authentication/api-key/?region=us"
         type: string
-        default: "https://account.boldsign.com/"
+        default: "https://api.boldsign.com"
