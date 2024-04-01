@@ -1,16 +1,16 @@
-name: Braintree
-unique_key: braintree
-docs: https://graphql.braintreepayments.com/guides/making_api_calls/#using-graphiql
-description: Braintree is a Chicago-based company that primarily deals in mobile and web payment systems for e-commerce companies.
-logo: https://cufinder.io/_next/image?url=https%3A%2F%2Fcufinder.io%2Fimages%2Fmarketing-logos%2Fbraintreepayments.com.png&w=1200&q=75
+name: Wave Accounting
+unique_key: wave-accounting
+docs: https://developer.waveapps.com/hc/en-us/articles/360019968212-API-Reference
+description: Wave is a company that provides financial services and software for small businesses.
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjfeggpdsZpBZ_jmnlIEPbIGAws24VxZMEFfya8o9-PFP5Wt2MMHKFFy9fFd5BrdEeInk&usqp=CAU
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [signature, digital]
 
 auth_schemes:
-  - scheme_name: braintree_oauth
+  - scheme_name: wave-accounting_oauth
     auth_mode: OAUTH2
-    authorization_url: "https://payments.sandbox.braintree-api.com/graphql/authorize"
-    token_url: "https://payments.sandbox.braintree-api.com/graphql/token"
+    authorization_url: "https://api.waveapps.com/oauth2/authorize"
+    token_url: "https://api.waveapps.com/oauth2/token"
     # default_scopes: ["appstore::apps:readwrite"]
     # scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
@@ -23,6 +23,6 @@ auth_schemes:
     fields:
       - name: base_url
         displayName: Base URL
-        description: "The base URL for Braintree API requests. For more information, visit https://graphql.braintreepayments.com/guides/making_api_calls/#using-graphiql"
+        description: "The base URL for Wave Accounting API requests. For more information, visit https://developer.waveapps.com/hc/en-us/articles/360019968212-API-Reference"
         type: string
-        default: "https://payments.sandbox.braintree-api.com/graphql"
+        default: "https://gql.waveapps.com"

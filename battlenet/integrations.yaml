@@ -1,18 +1,18 @@
-name: Amazon
-docs: https://developer.amazon.com/docs/app-submission-api/auth.html
-unique_key: amazon
-description:  Amazon is an American multinational technology company, engaged in e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.
-logo: "https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/Amazon-512.png"
+name: Battle.net
+unique_key: battlenet
+docs: https://develop.battle.net/documentation/guides/using-oauth
+description: Battle.net is an Internet-based online game, social networking service, digital distribution, and digital rights management platform developed by Blizzard Entertainment. 
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/blackbaud.svg
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
-categories: [ECommerce, Shopping]
+categories: [digital, game, internet]
 
 auth_schemes:
-  - scheme_name: amazon_oauth
+  - scheme_name: battlenet_oauth
     auth_mode: OAUTH2
-    authorization_url: "https://api.amazon.com/auth/o2/token"
-    token_url: "https://api.amazon.com/auth/o2/token"
-    default_scopes: ["appstore::apps:readwrite"]
-    scope_separator: ','
+    authorization_url: "https://oauth.battle.net/authorize"
+    token_url: "https://oauth.battle.net/token"
+    # default_scopes: ["appstore::apps:readwrite"]
+    # scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     authorization_params:
         response_type: "code"
@@ -23,6 +23,6 @@ auth_schemes:
     fields:
       - name: base_url
         displayName: Base URL
-        description: "The base URL for Amazon API requests. For more information, visit https://developer.amazon.com/docs/app-submission-api/auth.html"
+        description: "The base URL for Battle.net API requests. For more information, visit https://develop.battle.net/documentation/guides/using-oauth"
         type: string
-        default: "https://api.amazon.com"
+        default: "https://oauth.battle.net/"
