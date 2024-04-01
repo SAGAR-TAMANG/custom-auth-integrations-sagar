@@ -6,14 +6,13 @@ logo: https://brandfetch.com/calendly-embed.com?library=default&collection=logos
 categories: [Software]
 
 auth schemes:
-// OAuth2 
 	- scheme_name: calendly_oauth
 		auth_mode: OAUTH2
 		authorization_url: "https://auth.calendly.com/oauth/authorize"
     token_url: "https://auth.calendly.com/oauth/token"
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     authorization_params:
-        response_type: code
+        response_type: "code"
     token_params:
         grant_type: "authorization_code"
     proxy:
