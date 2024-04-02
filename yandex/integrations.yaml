@@ -1,0 +1,28 @@
+name: Xero
+unique_key: xero
+docs: https://developer.xero.com/documentation/guides/oauth2/auth-flow
+description: Xero online accounting software for your business connects you to your bank, accountant, bookkeeper, and other business apps. 
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-bab7CVfhf3iGd8UKTwf_senydk5v7E2wT-C-XTbxxg&s
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+categories: [accounting, business]
+
+auth_schemes:
+  - scheme_name: xero_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://login.xero.com/identity/connect/authorize"
+    token_url: "https://identity.xero.com/connect/token"
+    # default_scopes: ["appstore::apps:readwrite"]
+    # scope_separator: ','
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
+    proxy:
+      base_url: "{{base_url}}" 
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Xero API requests. For more information, visit https://developer.xero.com/documentation/guides/oauth2/auth-flow"
+        type: string
+        default: "https://api.xero.com/connections"
