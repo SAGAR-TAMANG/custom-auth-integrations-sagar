@@ -11,6 +11,7 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: "https://app.deel.com/oauth2/authorize"
     token_url: "https://auth.letsdeel.com/oauth2/tokens"
+    token_request_auth_method: basic
     # default_scopes: [""]
     # scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
