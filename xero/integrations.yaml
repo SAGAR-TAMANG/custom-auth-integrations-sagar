@@ -11,7 +11,7 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: "https://login.xero.com/identity/connect/authorize"
     token_url: "https://identity.xero.com/connect/token"
-    # default_scopes: ["appstore::apps:readwrite"]
+    default_scopes: ["accounting.transactions.read accounting.transactions"]
     # scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     authorization_params:
