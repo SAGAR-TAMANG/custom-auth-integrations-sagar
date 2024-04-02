@@ -9,8 +9,8 @@ categories: [Time Tracking, CRM]
 auth_schemes:
   - scheme_name: accelo_oauth
     auth_mode: OAUTH2
-    authorization_url: "https://{{sub domain}}.api.accelo.com/oauth2/v0/authorize"
-    token_url: "https://{{sub domain}}.api.accelo.com/oauth2/v0/token"
+    authorization_url: "https://{{subdomain}}.api.accelo.com/oauth2/v0/authorize"
+    token_url: "https://{{subdomain}}.api.accelo.com/oauth2/v0/token"
     default_scopes: ["read(all)"]
     scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
@@ -19,9 +19,9 @@ auth_schemes:
     token_params:
         grant_type: "authorization_code"
     proxy:
-      base_url: "{{base_url}}" 
+      base_url: "https://{{subdomain}}.api.accelo.com" 
     fields:
-      - name: sub domain
+      - name: subdomain
         expected_from_customer: true
         displayName: Sub Domain
         description: "The Sub Domain for Accelo API requests. For more information, visit https://api.accelo.com/docs/"
