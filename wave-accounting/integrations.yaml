@@ -11,7 +11,7 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: "https://api.waveapps.com/oauth2/authorize"
     token_url: "https://api.waveapps.com/oauth2/token"
-    default_scopes: ["account:write account:read"]
+    # default_scopes: ["appstore::apps:readwrite"]
     # scope_separator: ','
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     authorization_params:

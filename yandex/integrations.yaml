@@ -1,18 +1,17 @@
-name: Xero
-unique_key: xero
-docs: https://developer.xero.com/documentation/guides/oauth2/auth-flow
-description: Xero online accounting software for your business connects you to your bank, accountant, bookkeeper, and other business apps. 
-logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-bab7CVfhf3iGd8UKTwf_senydk5v7E2wT-C-XTbxxg&s
+name: Yandex
+unique_key: yandex
+docs: https://yandex.com/dev/id/doc/en/
+description: Yandex is a popular search engine that serves as an alternative to Google search.
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRrLgH7mE_B2NV3tu838YmmXFTwfGFsW_NifLF-xDufg&s
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
-categories: [accounting, business]
+categories: [search engine]
 
 auth_schemes:
-  - scheme_name: xero_oauth
+  - scheme_name: yandex_oauth
     auth_mode: OAUTH2
-    authorization_url: "https://login.xero.com/identity/connect/authorize"
-    token_url: "https://identity.xero.com/connect/token"
-    # default_scopes: ["appstore::apps:readwrite"]
-    # scope_separator: ','
+    authorization_url: "https://oauth.yandex.com/authorize"
+    token_url: "https://oauth.yandex.com/token"
+    default_scopes: ["login:info login:email login:avatar"]
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     authorization_params:
         response_type: "code"
@@ -23,6 +22,6 @@ auth_schemes:
     fields:
       - name: base_url
         displayName: Base URL
-        description: "The base URL for Xero API requests. For more information, visit https://developer.xero.com/documentation/guides/oauth2/auth-flow"
+        description: "The base URL for Yandex API requests. For more information, visit https://yandex.com/dev/id/doc/en/"
         type: string
-        default: "https://api.xero.com/connections"
+        default: "https://oauth.yandex.com/"
