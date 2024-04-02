@@ -2,7 +2,7 @@ name: Wakatime
 unique_key: wakatime
 docs: https://wakatime.com/developers#authentication
 description: WakaTime is a personal analytics service for programmers that shows you how you spend your time and helps you be more productive.
-logo: https://cdn.worldvectorlogo.com/logos/wakatime.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/wakatime.svg
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: []
 

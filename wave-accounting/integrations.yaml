@@ -2,7 +2,7 @@ name: Wave Accounting
 unique_key: wave-accounting
 docs: https://developer.waveapps.com/hc/en-us/articles/360019968212-API-Reference
 description: Wave is a company that provides financial services and software for small businesses.
-logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjfeggpdsZpBZ_jmnlIEPbIGAws24VxZMEFfya8o9-PFP5Wt2MMHKFFy9fFd5BrdEeInk&usqp=CAU
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/wave-accounting.svg
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [signature, digital]
 

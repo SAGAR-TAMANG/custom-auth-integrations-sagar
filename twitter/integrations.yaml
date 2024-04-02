@@ -2,7 +2,7 @@ name: Twitter
 unique_key: twitter
 docs: https://developer.twitter.com/en/docs/twitter-api
 description: Twitter, Inc. was an American social media company based in San Francisco, California, which operated and was named for named for its flagship social media network prior to its rebrand as X.
-logo: https://img.freepik.com/premium-vector/x-new-twitter-logo_469489-977.jpg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/twitter.svg
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [social, marketing]
 

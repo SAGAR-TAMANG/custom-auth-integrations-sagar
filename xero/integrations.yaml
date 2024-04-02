@@ -2,7 +2,7 @@ name: Xero
 unique_key: xero
 docs: https://developer.xero.com/documentation/guides/oauth2/auth-flow
 description: Xero online accounting software for your business connects you to your bank, accountant, bookkeeper, and other business apps. 
-logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-bab7CVfhf3iGd8UKTwf_senydk5v7E2wT-C-XTbxxg&s
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/xero.svg
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [accounting, business]
 

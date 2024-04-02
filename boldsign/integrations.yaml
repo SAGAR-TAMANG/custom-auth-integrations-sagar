@@ -2,7 +2,7 @@ name: Boldsign
 unique_key: boldsign
 docs: https://developers.boldsign.com/authentication/api-key/?region=us
 description: BoldSign is an easy-to-use and secure electronic signature solution. With BoldSign you can quickly complete your contracts, accept offers, sign NDAs, approve invoices, confirm service appointments, onboard new employees, and more with just few clicks.
-logo: https://cdn.knoji.com/images/logo/boldsign.jpg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/boldsign.svg
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [signature, digital]
 

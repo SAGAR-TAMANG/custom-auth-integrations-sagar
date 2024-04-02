@@ -2,7 +2,7 @@ name: Smart Recruiters
 unique_key: smartrecruiters
 docs: https://developers.smartrecruiters.com/docs/register-an-app
 description: Hiring Without Boundaries™ Move Faster and Hire Smarter with a Modern, All-in-One Hiring Platform.
-logo: https://cdn.smartrecruiters.com/wp-content/uploads/og-sr-bulb.jpg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/smartrecruiters-api-key.svg
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [ATS, hire, job]
 
