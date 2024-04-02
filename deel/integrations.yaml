@@ -9,11 +9,11 @@ categories: [CRM, ERP]
 auth_schemes:
   - scheme_name: deel_oauth
     auth_mode: OAUTH2
-    authorization_url: "https://app.deel.com/oauth2/authorize"
+    authorization_url: "https://auth.letsdeel.com/oauth2/authorize"
     token_url: "https://auth.letsdeel.com/oauth2/tokens"
-    # default_scopes: [""]
-    # scope_separator: ','
-    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    token_request_auth_method: basic
+    disable_pkce: true
+    default_scopes: ["contracts:read contracts:write"]
     authorization_params:
         response_type: "code"
     token_params:

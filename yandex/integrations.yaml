@@ -23,4 +23,4 @@ auth_schemes:
         displayName: Base URL
         description: "The base URL for Yandex API requests. For more information, visit https://yandex.com/dev/id/doc/en/"
         type: string
-        default: "https://translate.yandex.net"
+        default: "https://oauth.yandex.com/"
