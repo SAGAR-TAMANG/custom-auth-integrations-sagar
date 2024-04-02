@@ -12,6 +12,7 @@ auth_schemes:
     authorization_url: "https://app.deel.com/oauth2/authorize"
     token_url: "https://auth.letsdeel.com/oauth2/tokens"
     token_request_auth_method: basic
+    disable_pkce: true
     default_scopes: ["contracts:read contracts:write"]
     authorization_params:
         response_type: "code"
