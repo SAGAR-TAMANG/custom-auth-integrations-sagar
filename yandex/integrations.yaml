@@ -11,8 +11,6 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: "https://oauth.yandex.com/authorize"
     token_url: "https://oauth.yandex.com/token"
-    default_scopes: ["login:info login:email login:avatar"]
-    scope_separator: ' '
     token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
     authorization_params:
         response_type: "code"
