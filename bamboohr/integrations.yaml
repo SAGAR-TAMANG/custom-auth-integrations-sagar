@@ -2,7 +2,7 @@ name: BambooHR
 unique_key: bamboohr
 docs: https://documentation.bamboohr.com/docs/getting-started
 description: BambooHR is an American technology company that provides human resources software as a service. 
-logo: https://www.bamboohr.com/images/about/media-assets/b-logo-green.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/bamboohr.svg
 categories: [ERP, CRM]
 
 auth_schemes:
