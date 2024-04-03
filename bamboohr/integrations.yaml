@@ -24,3 +24,18 @@ auth_schemes:
         description: "The base URL for Amplitude API requests."
         type: string
         default: https://composio.bamboohr.com
+        
+- scheme_name: bamboohr_basic
+    auth_mode: BASIC
+    proxy:
+      base_url: https://api.bamboohr.com/api/gateway.php/{{subdomain}}
+      verification:
+        method: GET
+        endpoint: /v1/meta/fields
+    fields:
+      - name: subdomain
+        expected_from_customer: true 
+        displayName: Subdomain
+        description: Your BambooHR account subdomain.
+        type: string
+        required: true
