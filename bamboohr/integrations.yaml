@@ -1,28 +1,26 @@
-name: Blackbaud
-unique_key: blackbaud
-docs: https://developer.blackbaud.com/skyapi/docs/authorization
-description: Blackbaud, Inc. is a cloud computing provider that serves the social good community—nonprofits, foundations, corporations, education institutions, healthcare organizations, religious organizations, and individual change agents.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/bamboohr.svg
-callback_url: https://backend.composio.dev/api/v1/auth-apps/add
-categories: [cloud, computing, social]
+name: BambooHR
+unique_key: bamboohr
+docs: https://documentation.bamboohr.com/docs/getting-started
+description: BambooHR is an American technology company that provides human resources software as a service. 
+logo: https://www.bamboohr.com/images/about/media-assets/b-logo-green.png
+categories: [ERP, CRM]
 
 auth_schemes:
-  - scheme_name: bamboohr_oauth
-    auth_mode: OAUTH2
-    authorization_url: "https://app.blackbaud.com/oauth/authorize "
-    token_url: "https://oauth2.sky.blackbaud.com/token"
-    # default_scopes: ["appstore::apps:readwrite"]
-    # scope_separator: ','
-    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
-    authorization_params:
-        response_type: "code"
-    token_params:
-        grant_type: "authorization_code"
+  - scheme_name: bamboohr_api_key
+    auth_mode: API_KEY
     proxy:
-      base_url: "{{base_url}}" 
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "{{apiSecret}}"
     fields:
+      - name: apiSecret
+        expected_from_customer: true 
+        displayName: API Secret
+        description: "Your Amplitude API secret for authentication."
+        type: string
+        required: true
       - name: base_url
         displayName: Base URL
-        description: "The base URL for Blackbaud API requests. For more information, visit https://developer.blackbaud.com/skyapi/docs/authorization"
+        description: "The base URL for Amplitude API requests."
         type: string
-        default: "https://app.blackbaud.com/"
+        default: https://composio.bamboohr.com
