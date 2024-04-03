@@ -9,7 +9,7 @@ auth_schemes:
   - scheme_name: bamboohr_api_key
     auth_mode: API_KEY
     proxy:
-      base_url: "{{base_url}}"
+      base_url: "{{subdomain}}.bamboohr.com"
       headers:
         Authorization: "{{apiSecret}}"
     fields:
@@ -19,11 +19,12 @@ auth_schemes:
         description: "Your Amplitude API secret for authentication."
         type: string
         required: true
-      - name: base_url
-        displayName: Base URL
-        description: "The base URL for Amplitude API requests."
+      - name: subdomain
+        expected_from_customer: true 
+        displayName: Subdomain
+        description: Your BambooHR account subdomain.
         type: string
-        default: https://composio.bamboohr.com        
+        required: true       
   - scheme_name: bamboohr_basic
     auth_mode: BASIC
     proxy:
