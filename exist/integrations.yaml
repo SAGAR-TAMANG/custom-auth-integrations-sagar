@@ -1,0 +1,28 @@
+name: Exist
+docs: https://developer.exist.io/reference/authentication/oauth2/
+unique_key: exist
+description: With Exist, you can create your own data points to track anything else you want. Use it as a habit tracker, keep a record of medications and symptoms, or track subjective measures like energy and stress levels.
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/exist.svg
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+categories: [Scheduling, Personal]
+
+auth_schemes:
+  - scheme_name: exist_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://exist.io/oauth2/authorize"
+    token_url: "https://exist.io/oauth2/access_token"
+    default_scopes: []
+    scope_separator: ','
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
+    proxy:
+      base_url: "{{base_url}}" 
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Exist API requests. For more information, visit https://developer.exist.io/reference/authentication/oauth2/"
+        type: string
+        default: "https://exist.io" 
