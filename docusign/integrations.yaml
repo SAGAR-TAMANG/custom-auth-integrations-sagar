@@ -1,0 +1,28 @@
+name: DocuSign
+docs: https://admin.docusign.com/
+unique_key: docusign
+description: DocuSign, Inc. is an American company headquartered in San Francisco, California, that allows organizations to manage electronic agreements with electronic signatures on different devices.
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/docusign.svg
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+categories: [internet]
+
+auth_schemes:
+  - scheme_name: docusign_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://account-d.docusign.com/oauth/auth"
+    token_url: "https://account-d.docusign.com/oauth/token"
+    # default_scopes: ["read(all)"]
+    # scope_separator: ','
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
+    proxy:
+      base_url: "{{base_url}}" 
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for DocuSign API requests. For more information, visit https://admin.docusign.com/"
+        type: string
+        default: "https://na3.docusign.net"
