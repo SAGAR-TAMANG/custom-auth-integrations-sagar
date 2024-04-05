@@ -1,0 +1,26 @@
+name: Factorial
+docs: https://apidoc.factorialhr.com/docs/
+unique_key: exist
+description: It is a comprehensive software solution designed to streamline and manage various HR processes within an organization.
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/factorial.svg
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+categories: [ERP, CRM]
+
+auth_schemes:
+  - scheme_name: factorial_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://api.factorialhr.com/oauth/authorize"
+    token_url: "https://api.factorialhr.com/oauth/token"
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
+    proxy:
+      base_url: "{{base_url}}" 
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Factorial API requests. For more information, visit https://apidoc.factorialhr.com/docs/"
+        type: string
+        default: "https://exist.io" 
