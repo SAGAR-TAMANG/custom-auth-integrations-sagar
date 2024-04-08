@@ -1,0 +1,27 @@
+name: aero-workflow
+unique_key: aero-workflow
+docs: https://www.aeroworkflow.com/aero-api/
+description: Workflow designed for accountants by accountants. Aero gives you the tools you need to run your firm proactively, creating a scalable, efficient firm.
+logo: https://www.aeroworkflow.com/wp-content/uploads/2017/01/Aero-Header-Logo.png
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+categories: [Accounts]
+
+auth_schemes:
+  - scheme_name: aero-workflow_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "{{apiSecret}}"
+    fields:
+      - name: apiSecret
+        expected_from_customer: true 
+        displayName: API Secret
+        description: "Your Aero Workflow API secret for authentication."
+        type: string
+        required: true
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Aero Workflow API requests."
+        type: string
+        default: https://api.aeroworkflow.com/api
