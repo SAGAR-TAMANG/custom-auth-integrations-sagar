@@ -24,4 +24,4 @@ auth_schemes:
         displayName: Base URL
         description: "The base URL for Axonaut API requests."
         type: string
-        default: https://api.aeroworkflow.com/api
+        default: https://axonaut.com/api/v2/
