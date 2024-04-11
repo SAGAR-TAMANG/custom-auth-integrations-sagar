@@ -23,3 +23,15 @@ auth_schemes:
     token_url: "https://oauth.chatwork.com/token"
     default_scopes: ["users.profile.me:read"]
     token_response_metadata: [access_token, scope, token_type, user_id]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
+    proxy:
+      base_url: "{{base_url}}" 
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Chatwork API requests. For more information, visit https://developer.chatwork.com/docs/oauth"
+        type: string
+        default: "https://api.chatwork.com/v2/me"
