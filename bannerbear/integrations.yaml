@@ -1,0 +1,29 @@
+name: Bannerbear
+unique_key: bannerbear
+description: Bannerbear is an API and integration tool that allows users to auto-generate social media visuals, e-commerce banners, and more.
+logo: https://cdn.bannerbear.com/assets/transparent_icon-0833cf9133e9c568608c1439c76c94521362b94a91cd29f04e713462d1933625.png
+categories: [integration]
+documentation_doc_text: "- [Bannerbear OAuth Documentation](https://developers.bannerbear.com/) - [Bannerbear API Documentation](https://www.bannerbear.com/help/api/) "
+configuration_docs_text: "<Tip>New App can be created at [Bannerbear Projects](https://app.bannerbear.com/projects).</Tip> \nOnce you create the App, find the _Authorization callback URL_ field and configure the below Redirect URL: ``` https://backend.composio.dev/api/v1/auth-apps/bannerbear/connection/oauth2/add ``` After registering the app, copy the Client ID from the app page and generate/copy the Client Secret. On Composio's [supported apps](https://app.composio.dev/apps) page, find Bannerbear and click 'Enable'. Paste your Client ID and Secret, then Save to connect Bannerbear."
+get_current_user_endpoint: "{{base_url}}/me"
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
+
+auth_schemes:
+  - scheme_name: bannerbear_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "{{apiSecret}}"
+    fields:
+      - name: apiSecret
+        expected_from_customer: true 
+        displayName: API Secret
+        description: "Your Bannerbear API secret for authentication."
+        type: string
+        required: true
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Bannerbear API requests."
+        type: string
+        default: https://api.bannerbear.com
