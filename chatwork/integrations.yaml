@@ -7,7 +7,7 @@ documentation_doc_text: "\- [Chatwork OAuth Documentation](https://developer.cha
 configuration_docs_text: "<Tip>New App can be created at [Chatwork OAuth Client](https://www.chatwork.com/service/packages/chatwork/subpackages/oauth/client_create.php).</Tip> \nOnce you create the App, find the _Authorization callback URL_ field and configure the below Redirect URL: ```
 https://backend.composio.dev/api/v1/auth-apps/chatwork/connection/oauth2/add ``` After registering the app, copy the Client ID from the app page and generate/copy the Client Secret. On Composio's [supported apps](https://app.composio.dev/apps) page, find Chatwork and click 'Enable'. Paste your Client ID and Secret, then Save to connect Chatwork."
 get_current_user_endpoint: "{{base_url}}/me"
-callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
 
 auth_schemes:
   - scheme_name: chatwork_oauth
