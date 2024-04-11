@@ -10,7 +10,7 @@ configuration_docs_text: "<Tip>New App can be created at [Chatwork OAuth Client]
 https://backend.composio.dev/api/v1/auth-apps/chatwork/connection/oauth2/add
 ```
 
-After registering the app, copy the Client ID from the app page and generate/copy the Client Secret. On Composio's [supported apps](https://app.composio.dev/apps) page, find Chatwork and click "Enable". Paste your Client ID and Secret, then Save to connect Chatwork.
+After registering the app, copy the Client ID from the app page and generate/copy the Client Secret. On Composio's [supported apps](https://app.composio.dev/apps) page, find Chatwork and click 'Enable'. Paste your Client ID and Secret, then Save to connect Chatwork.
 
 "
 get_current_user_endpoint: "https://api.github.com/user"
