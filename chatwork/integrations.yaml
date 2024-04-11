@@ -3,7 +3,7 @@ unique_key: chatwork
 description: ChatWork is all-in-one group chat for global teams. It brings secure messaging, task management, file sharing and video chat all in one place.
 logo: https://go.chatwork.com/en/image/common/logo_hz.png
 categories: [collaboration]
-documentation_doc_text: "- [Chatwork OAuth Documentation](https://developer.chatwork.com/docs/oauth) \- [Chatwork API Documentation](https://developer.chatwork.com/docs/getting-started#chatwork-api%EF%BC%9F) "
+documentation_doc_text: "- [Chatwork OAuth Documentation](https://developer.chatwork.com/docs/oauth) - [Chatwork API Documentation](https://developer.chatwork.com/docs/getting-started#chatwork-api%EF%BC%9F) "
 configuration_docs_text: "<Tip>New App can be created at [Chatwork OAuth Client](https://www.chatwork.com/service/packages/chatwork/subpackages/oauth/client_create.php).</Tip> \nOnce you create the App, find the _Authorization callback URL_ field and configure the below Redirect URL: ``` https://backend.composio.dev/api/v1/auth-apps/chatwork/connection/oauth2/add ``` After registering the app, copy the Client ID from the app page and generate/copy the Client Secret. On Composio's [supported apps](https://app.composio.dev/apps) page, find Chatwork and click 'Enable'. Paste your Client ID and Secret, then Save to connect Chatwork."
 get_current_user_endpoint: "{{base_url}}/me"
 callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
