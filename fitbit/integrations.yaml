@@ -15,6 +15,7 @@ auth_schemes:
         response_type: "code"
     token_params:
         grant_type: "authorization_code"
+    token_request_auth_method: basic
     proxy:
       base_url: "{{base_url}}"
     fields:
