@@ -5,7 +5,7 @@ description: Axonaut, the management software for  VSEs and SMEs
 logo: https://axonaut.com/uploads/cms/16_FDU7EFW9CLFSHHUU/uploaded_images/_f2ed-73bf-ee66-3a19-6a62.webp
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [Management, ERP]
-get_current_user_endpoint: "me"
+get_current_user_endpoint: "/me"
 
 auth_schemes:
   - scheme_name: axonaut_api_key
@@ -25,4 +25,4 @@ auth_schemes:
         displayName: Base URL
         description: "The base URL for Axonaut API requests."
         type: string
-        default: https://axonaut.com/api/v2/
+        default: https://axonaut.com/api/v2
