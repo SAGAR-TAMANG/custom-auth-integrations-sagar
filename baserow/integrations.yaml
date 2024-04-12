@@ -1,22 +1,28 @@
-name: Baserow
-unique_key: baserow
-docs: https://documentation.bamboohr.com/docs/getting-started
-description: BambooHR is an American technology company that provides human resources software as a service. 
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/bamboohr.svg
-categories: [ERP, CRM]
+name: Baserow API
+unique_key: baserowApi
+docs: https://baserow.io/docs/integrations
+description: Access and manage your Baserow databases programmatically.
+logo: https://baserow.io/logo.svg
+categories: [Database, API]
 
 auth_schemes:
-  - scheme_name: baserow_basic
-    auth_mode: BASIC
-    proxy:
-      base_url: https://baserow.io/login/
-      verification:
-        method: GET
-        endpoint: /v1
+  - scheme_name: API Key
+    auth_mode: API_KEY
+    token_params:
+      header_name: Authorization
+      header_value_prefix: Token 
     fields:
-      - name: subdomain
-        expected_from_customer: true 
-        displayName: Subdomain
-        description: Your Baserow account subdomain.
+      - name: host
+        displayName: Host
+        description: "The API base URL for Baserow."
         type: string
-        required: true
+        default: "https://api.baserow.io"
+      - name: username
+        displayName: Username
+        description: "Your Baserow username."
+        type: string
+      - name: password
+        displayName: Password
+        description: "Your Baserow password."
+        type: string
+        is_secret: true
