@@ -1,0 +1,28 @@
+name: Beeminder
+unique_key: beeminder
+docs: https://api.beeminder.com/
+description: Beeminder functions as a self-tracking tool and provides a visual representation of progress towards predefined objectives.
+logo: https://api.beeminder.com/images/bee_logo_110.png
+categories: [Tracking, Progress]
+
+auth_schemes:
+  - scheme_name: API Key
+    auth_mode: API_KEY
+    token_params:
+      header_name: Authorization
+      header_value_prefix: Token 
+    fields:
+      - name: host
+        displayName: Host
+        description: "The API base URL for Beeminder."
+        type: string
+        default: "https://www.beeminder.com/api/v1/users/{{username}}"
+      - name: username
+        displayName: Username
+        description: "Your Baserow username."
+        type: string
+      - name: auth_token
+        displayName: Auth_Token
+        description: "Your Baserow Auth Token (API Key)."
+        type: string
+        is_secret: true
