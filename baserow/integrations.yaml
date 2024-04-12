@@ -1,8 +1,8 @@
 name: Baserow API
 unique_key: baserowApi
-docs: https://baserow.io/docs/integrations
+docs: https://baserow.io/docs/apis/rest-api
 description: Access and manage your Baserow databases programmatically.
-logo: https://baserow.io/logo.svg
+logo: https://baserow.io/_nuxt/img/logo.81dc689.svg
 categories: [Database, API]
 
 auth_schemes:
