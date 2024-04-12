@@ -5,7 +5,7 @@ description: Bitwarden makes it easy for businesses and individuals to securely 
 logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_TlLWAd-HNEGfSgGPihCGCu_36IoHg3ObpvmarA0cpA&s
 categories: [Security]
 documentation_doc_text: "- [Bitwarden API Documentation](https://bitwarden.com/help/public-api/) "
-configuration_docs_text: "<Tip>New Account can be created at [Bitwarden Page](https://vault.bitwarden.com/#/register?org=teams).</Tip> \nOnce you create the App, find the _Authorization callback URL_ field and configure the below Redirect URL: ``` https://backend.composio.dev/api/v1/auth-apps/bannerbear/connection/oauth2/add ``` After registering the app, copy the Client ID from the app page and generate/copy the Client Secret. On Composio's [supported apps](https://app.composio.dev/apps) page, find Bitwarden and click 'Enable'. Paste your Client ID and Secret, then Save to connect Bitwarden."
+configuration_docs_text: "<Tip>New Account can be created at [Bitwarden Page](https://vault.bitwarden.com/#/register?org=teams).</Tip> \nOnce you create the App, find the _Authorization callback URL_ field and configure the below Redirect URL: ``` https://backend.composio.dev/api/v1/auth-apps/bitwarden/connection/oauth2/add ``` After registering the app, copy the Client ID from the app page and generate/copy the Client Secret. On Composio's [supported apps](https://app.composio.dev/apps) page, find Bitwarden and click 'Enable'. Paste your Client ID and Secret, then Save to connect Bitwarden."
 get_current_user_endpoint: "{{base_url}}/me"
 callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
 
