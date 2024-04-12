@@ -1,0 +1,22 @@
+name: Baserow
+unique_key: baserow
+docs: https://documentation.bamboohr.com/docs/getting-started
+description: BambooHR is an American technology company that provides human resources software as a service. 
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/bamboohr.svg
+categories: [ERP, CRM]
+
+auth_schemes:
+  - scheme_name: baserow_basic
+    auth_mode: BASIC
+    proxy:
+      base_url: https://baserow.io/login/
+      verification:
+        method: GET
+        endpoint: /v1
+    fields:
+      - name: subdomain
+        expected_from_customer: true 
+        displayName: Subdomain
+        description: Your Baserow account subdomain.
+        type: string
+        required: true
