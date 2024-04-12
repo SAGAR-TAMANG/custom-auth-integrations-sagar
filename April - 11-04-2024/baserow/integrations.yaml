@@ -4,6 +4,8 @@ docs: https://baserow.io/docs/apis/rest-api
 description: Access and manage your Baserow databases programmatically.
 logo: https://baserow.io/_nuxt/img/logo.81dc689.svg
 categories: [Database, API]
+documentation_doc_text: "- [Baserow OAuth Documentation](https://baserow.io/docs/apis/rest-api/) - [Baserow API Documentation](https://baserow.io/docs/apis/rest-api/) "
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
 
 auth_schemes:
   - scheme_name: API Key

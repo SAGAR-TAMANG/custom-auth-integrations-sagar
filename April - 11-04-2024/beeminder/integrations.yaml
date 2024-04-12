@@ -4,6 +4,7 @@ docs: https://api.beeminder.com/
 description: Beeminder functions as a self-tracking tool and provides a visual representation of progress towards predefined objectives.
 logo: https://api.beeminder.com/images/bee_logo_110.png
 categories: [Tracking, Progress]
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
 
 auth_schemes:
   - scheme_name: API Key
