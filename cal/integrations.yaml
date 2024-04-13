@@ -1,0 +1,27 @@
+name: Cal
+unique_key: cal
+docs: https://developer.cal.com/api/authentication
+description: "As a calendar scheduling infrastructure product, Cal.com is focused on helping people do one essential thing: find the perfect time to meet."
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgHqAPub1RBRr-nKQpx23BuFrnBHVJotnm05vzfdeF2w&s
+categories: [Calendar, Scheduling]
+documentation_doc_text: "- [Cal API Documentation](https://developer.cal.com/api/authentication) "
+configuration_docs_text: "<Tip>New Account can be created at [Cal.com](https://www.cal.com/).</Tip> \n Once you log into the App go to the settings > API > New API. Copy the API Key from the app page and generate/copy it. On Composio's [supported apps](https://app.composio.dev/apps) page, find Cal and click 'Enable'. Paste your API Key, then Save to connect Cal."
+get_current_user_endpoint: "{{base_url}}/me"
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
+
+auth_schemes:
+  - scheme_name: API Key
+    auth_mode: API_KEY
+    token_params:
+      header_name: Authorization
+      header_value_prefix: Token 
+    fields:
+      - name: host
+        displayName: Host
+        description: "The API base URL for Brevo."
+        type: string
+        default: "https://api.cal.com/v1/"
+      - name: apiKey
+        displayName: API Key
+        description: "Your API Key."
+        type: string
