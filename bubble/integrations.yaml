@@ -1,0 +1,31 @@
+name: Bubble
+unique_key: bubble
+docs: https://manual.bubble.io/core-resources/api
+description: Bubble is a visual programming language and a PaaS developed by Bubble Group.
+logo: https://getlogovector.com/wp-content/uploads/2021/08/bubble-io-logo-vector.png
+categories: [Programming]
+documentation_doc_text: "- [Bubble API Documentation](https://manual.bubble.io/core-resources/api) "
+configuration_docs_text: "<Tip>New Account can be created at [Bubble](https://bubble.io/).</Tip> \n New App can be created at [Dashboard](https://bubble.io/home). Once you create the App go to the settings > API > Generate API. Copy the API Key from the app page and generate/copy it. On Composio's [supported apps](https://app.composio.dev/apps) page, find Bubble and click 'Enable'. Paste your API Key, then Save to connect Bubble."
+get_current_user_endpoint: "{{base_url}}/me"
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
+
+auth_schemes:
+  - scheme_name: API Key
+    auth_mode: API_KEY
+    token_params:
+      header_name: Authorization
+      header_value_prefix: Token 
+    fields:
+      - name: host
+        displayName: Host
+        description: "The API base URL for Brevo."
+        type: string
+        default: "https://{{my_bubble_application}}.bubbleapps.io/version-test/api/1.1/wf"
+      - name: my_bubble_application
+        displayName: My Bubble Application Name
+        description: "Your Bubble Application Name."
+        type: string
+      - name: api_key
+        displayName: API Key
+        description: "Your API Key."
+        type: string
