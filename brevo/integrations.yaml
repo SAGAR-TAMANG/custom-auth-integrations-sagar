@@ -1,0 +1,27 @@
+name: Brevo
+unique_key: brevo
+docs: https://developers.brevo.com/reference/getting-started-1
+description: Brevo, formerly Sendinblue, is a SaaS solution for relationship marketing.
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ4ccxmfh3oyqSN1h5HfGdXmSy3ZoDXIF_bD1GaXkMQw&s
+categories: [Relationship, Marketing]
+documentation_doc_text: "- [Brevo API Documentation](https://docs.brandfetch.com/docs/apis) "
+configuration_docs_text: "<Tip>New Account can be created at [Brevo](https://onboarding.brevo.com/account/register).</Tip> \nOnce you create the App, find the _Authorization callback URL_ field and configure the below Redirect URL: ``` https://backend.composio.dev/api/v1/auth-apps/brevo/connection/oauth2/add ``` After registering the app, copy the API Key from the app page and generate/copy it. On Composio's [supported apps](https://app.composio.dev/apps) page, find Brevo and click 'Enable'. Paste your API Key, then Save to connect Brevo."
+get_current_user_endpoint: "{{base_url}}/me"
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
+
+auth_schemes:
+  - scheme_name: API Key
+    auth_mode: API_KEY
+    token_params:
+      header_name: Authorization
+      header_value_prefix: Token 
+    fields:
+      - name: host
+        displayName: Host
+        description: "The API base URL for Brevo."
+        type: string
+        default: "https://api.brevo.com/v3/"
+      - name: api_key
+        displayName: API Key
+        description: "Your API Key."
+        type: string
