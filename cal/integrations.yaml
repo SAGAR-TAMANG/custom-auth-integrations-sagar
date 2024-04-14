@@ -18,7 +18,7 @@ auth_schemes:
     fields:
       - name: host
         displayName: Host
-        description: "The API base URL for Brevo."
+        description: "The API base URL for Cal."
         type: string
         default: "https://api.cal.com/v1/"
       - name: apiKey

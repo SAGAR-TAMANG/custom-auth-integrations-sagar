@@ -18,7 +18,7 @@ auth_schemes:
     fields:
       - name: host
         displayName: Host
-        description: "The API base URL for Brevo."
+        description: "The API base URL for Bubble."
         type: string
         default: "https://{{my_bubble_application}}.bubbleapps.io/version-test/api/1.1/wf"
       - name: my_bubble_application
