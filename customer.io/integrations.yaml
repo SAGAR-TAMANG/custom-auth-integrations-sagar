@@ -18,7 +18,7 @@ auth_schemes:
     fields:
       - name: host
         displayName: Host
-        description: "The API base URL for Custoer.io."
+        description: "The API base URL for Customer.io."
         type: string
         default: "https://api.customer.io/v1/api/"
       - name: apiKey
