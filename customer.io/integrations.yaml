@@ -1,0 +1,27 @@
+name: Customer.io
+unique_key: customer.io
+docs: https://customer.io/docs/api/
+description: "Customer.io is a customer engagement platform designed for creating data-driven campaigns that reach people across all messaging channels at the right time."
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRng2GeQnOygSfZ5SetWV7F6zglRfIhkA1rppPlsjkIoQ&s
+categories: [Customer]
+documentation_doc_text: "- [Customer.io API Documentation](https://customer.io/docs/api/) "
+configuration_docs_text: "<Tip>New Account can be created at [Customer.io](https://customer.io/).</Tip> \n Once you log into the App go to the settings > API > New API. Copy the API Key from the app page and generate/copy it. On Composio's [supported apps](https://app.composio.dev/apps) page, find Customer.io and click 'Enable'. Paste your API Key, then Save to connect Customer.io."
+get_current_user_endpoint: "{{base_url}}/me"
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
+
+auth_schemes:
+  - scheme_name: API Key
+    auth_mode: API_KEY
+    token_params:
+      header_name: Authorization
+      header_value_prefix: Token 
+    fields:
+      - name: host
+        displayName: Host
+        description: "The API base URL for Customer.io."
+        type: string
+        default: "https://api.customer.io/v1/api/"
+      - name: apiKey
+        displayName: API Key
+        description: "Your API Key."
+        type: string

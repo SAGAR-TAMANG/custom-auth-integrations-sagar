@@ -1,0 +1,31 @@
+name: Demio
+unique_key: demio
+docs: https://publicdemioapi.docs.apiary.io/
+description: "Demio is built so you can host engaging experiences that turn into analytical insights - making you the most popular marketer in the room."
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfHlfYD1DYdoSclSX833-6cOYcNCUtycPYHNZAJNktdA&s
+categories: [Marketing]
+documentation_doc_text: "- [Demio API Documentation](https://publicdemioapi.docs.apiary.io/) "
+configuration_docs_text: "<Tip>New Account can be created at [Demio](https://demio.com/).</Tip> \n Once you log into the App go to the settings > API. Copy the API Key and API Secret from the app page and generate/copy it. On Composio's [supported apps](https://app.composio.dev/apps) page, find Demio and click 'Enable'. Paste your API Key, then Save to connect Demio."
+get_current_user_endpoint: "{{base_url}}/me"
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
+
+auth_schemes:
+  - scheme_name: API Key
+    auth_mode: API_KEY
+    token_params:
+      header_name: Authorization
+      header_value_prefix: Token 
+    fields:
+      - name: host
+        displayName: Host
+        description: "The API base URL for Demio."
+        type: string
+        default: "https://my.demio.com/api/v1/ping"
+      - name: apiKey
+        displayName: API Key
+        description: "Your API Key."
+        type: string
+      - name: apiSecret
+        displayName: API Secret
+        description: "Your API Secret."
+        type: string
