@@ -2,7 +2,7 @@ name: aero-workflow
 unique_key: aero-workflow
 docs: https://www.aeroworkflow.com/aero-api/
 description: Workflow designed for accountants by accountants. Aero gives you the tools you need to run your firm proactively, creating a scalable, efficient firm.
-logo: https://www.aeroworkflow.com/wp-content/uploads/2017/01/Aero-Header-Logo.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/aero-workflow-logo.png
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 categories: [Accounts]
 get_current_user_endpoint: "{{base_url}}/{accountid}/me"
