@@ -1,0 +1,28 @@
+name: Discourse
+docs: https://composio.discourse.group/t/admin-guide-getting-started/
+unique_key: discourse
+description: Discourse is an open source Internet forum system. Features include threading, categorization and tagging of discussions, configurable access control, live updates, expanding link previews, infinite scrolling, and real-time notifications.
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_XhA4NfJN9xY-DZ9gWbjbjJBryKDVx8HqwXiBL2WaMQ&s
+categories: [Social Media]
+get_current_user_endpoint: "{{base_url}}/me"
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
+
+auth_schemes:
+  - scheme_name: discourse_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "{{apiSecret}}"
+    fields:
+      - name: apiKey
+        expected_from_customer: true 
+        displayName: API Key
+        description: "Your API Key for authentication."
+        type: string
+        required: true
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Discourse API requests using API Key authentication."
+        type: string
+        default: https://api.discourse.org/api/auth_redirect
