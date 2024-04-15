@@ -1,0 +1,34 @@
+name: Disqus
+docs: https://disqus.com/api/docs/
+unique_key: disqus
+description: Disqus is a networked community platform used by hundreds of thousands of sites all over the web.
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5QH8hvAI_XONw-fTDK9nhWXLPxJ9RYpjwg3YNQGv1Sg&s
+categories: [Networking, Social MEdia]
+get_current_user_endpoint: "{{base_url}}/me"
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
+
+auth_schemes:
+  - scheme_name: disqus_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "{{apiSecret}}"
+    fields:
+      - name: apiKey
+        expected_from_customer: true 
+        displayName: API Key
+        description: "Your API Key for authentication."
+        type: string
+        required: true
+      - name: apiSecret
+        expected_from_customer: true 
+        displayName: API Secret
+        description: "Your API Square API secret for authentication."
+        type: string
+        required: true
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Disqus API requests using API Key authentication."
+        type: string
+        default: https://disqus.com/api/oauth/2.0/authorize/
