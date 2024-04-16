@@ -1,0 +1,29 @@
+name: Drift
+docs: https://devdocs.drift.com/docs/using-drift-apis
+unique_key: drift
+description: Drift is a cloud-based chat solution that automates a key part of a business's sales process - lead generation.
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSORidiovsfuEVU1lP5YEeKAyaTTdWja2M9oa6akAmb1A&s
+get_current_user_endpoint: "{{base_url}}/me"
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+categories: [Sales, CRM]
+
+auth_schemes:
+  - scheme_name: drift_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://dev.drift.com/authorize"
+    token_url: "https://driftapi.com/oauth2/token"
+    # default_scopes: ["read(all)"]
+    # scope_separator: ','
+    token_response_metadata: [access_token, token_type, scope, expires_in, refresh_token]
+    authorization_params:
+        response_type: "code"
+    token_params:
+        grant_type: "authorization_code"
+    proxy:
+      base_url: "{{base_url}}" 
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Drift API requests. For more information, visit https://devdocs.drift.com/docs/using-drift-apis"
+        type: string
+        default: "https://composio.us.auth0.com"
