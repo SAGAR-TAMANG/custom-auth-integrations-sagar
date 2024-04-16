@@ -21,12 +21,6 @@ auth_schemes:
         description: "Your API Key for authentication."
         type: string
         required: true
-      - name: apiSecret
-        expected_from_customer: true 
-        displayName: API Secret
-        description: "Your API Square API secret for authentication."
-        type: string
-        required: true
       - name: base_url
         displayName: Base URL
         description: "The base URL for Elasticsearch API requests using API Key authentication."
