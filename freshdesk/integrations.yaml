@@ -1,0 +1,28 @@
+name: Freshdesk
+docs: https://developers.freshdesk.com/api/#getting-started
+unique_key: freshdesk
+description: Freshdesk is a special cloud-based software designed to facilitate and improve customer support. 
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_o-__7XUUOrqy0LyPz8eHFxMhAeOqz7LAAb1dNNS19Q&s
+categories: [CRM]
+get_current_user_endpoint: "{{base_url}}/me"
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
+
+auth_schemes:
+  - scheme_name: freshdesk_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "{{apiSecret}}"
+    fields:
+      - name: apiKey
+        expected_from_customer: true 
+        displayName: API Key
+        description: "Your API Key for authentication."
+        type: string
+        required: true
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Freshdesk API requests using API Key authentication."
+        type: string
+        default: https://composio.freshdesk.com/api/v2/
