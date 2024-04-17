@@ -1,0 +1,28 @@
+name: Freshservice
+docs: https://api.freshservice.com/#schema
+unique_key: freshservice
+description: Freshservice is a cloud-based IT Help Desk and service management solution that enables organizations to simplify their IT operations.
+logo: https://cloudcti.nl/sites/default/files/styles/logo/public/externals/196513a92a5271b1e282873a0ea34838.png?itok=SPQUf0FG
+categories: [Cloud]
+get_current_user_endpoint: "{{base_url}}/me"
+callback_url: "https://backend.composio.dev/api/v1/auth-apps/add"
+
+auth_schemes:
+  - scheme_name: freshservice_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "{{apiSecret}}"
+    fields:
+      - name: apiKey
+        expected_from_customer: true 
+        displayName: API Key
+        description: "Your API Key for authentication."
+        type: string
+        required: true
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Freshservice API requests using API Key authentication."
+        type: string
+        default: https://composioservicedesk.freshservice/api/v2/
